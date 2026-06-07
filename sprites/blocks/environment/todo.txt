@@ -1,0 +1,5 @@
+large collapsed silicon wall: second variation
+[ TallBlock ]
+stone blocks: 2 variations
+carbon stone blocks: 2 variations
+add shadow regions for all variations!

@@ -1,0 +1,11 @@
+type: RainWeather
+color: 92dbf0
+liquid: cryofluid
+padding: 20
+sizeMax: 30
+sizeMin: 24
+density: 400
+sound: rain
+soundVol: 0.3
+yspeed: 7
+xspeed: 4

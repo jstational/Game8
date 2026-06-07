@@ -1,0 +1,10 @@
+Hey, using other mods as a guide may be a good strategy. just dont copy their code.
+Hope this is useful to you!
+- divisions
+	how small the hexagons are
+- thresh
+	how much space the hexagons take
+- radius
+	
+- persistence
+	

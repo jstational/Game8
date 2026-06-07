@@ -1,0 +1,18 @@
+the planet should have{
+ coldregions: {
+  cryofluid (liquid)
+  snow
+  ice
+ }
+ stoneregions: {
+ stone (light)
+ basalt (mid) (medium)
+ carbon stone (deep) (dark)
+ }
+ otherregions: {
+ ferric (deep) (orange?)
+ primordial ferric (deeper) (light orange?)
+ beryllic (deep) (dark green)
+ crystalline (beryllic extension) (dark purple)
+ }
+}

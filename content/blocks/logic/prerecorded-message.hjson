@@ -1,0 +1,4 @@
+type: MessageBlock
+name: "Prerecorded Message"
+maxTextLength: 500
+maxNewlines: 48

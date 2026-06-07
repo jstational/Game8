@@ -1,0 +1,9 @@
+name: dark-onset
+planet: cryothera
+difficulty: 0
+sector: 112
+research: {
+ parent: core-structure
+ planet: cryothera
+}      
+localizedName: "Dark Onset"
