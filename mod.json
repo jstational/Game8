@@ -6,4 +6,4 @@ version: "0a"
 minGameVersion: "158"
 dependencies: [ ]
 hidden: false
-main: "game8java.Main"
+main: "g8.Main"
