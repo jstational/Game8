@@ -1,0 +1,9 @@
+name: "g8"
+displayName: "Game8"
+author: skyintheclouds
+description: "You should try steamworks, its way better than this."
+version: "0a"
+minGameVersion: "158"
+dependencies: [ ]
+hidden: false
+main: game8java.game8javap.Main
