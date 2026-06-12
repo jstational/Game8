@@ -1,9 +1,11 @@
 name: "g8"
 displayName: "Game8"
-author: skyintheclouds
-description: "You should try steamworks, its way better than this."
+author: "jstation"
+description: "Far away...
+[gray]try steamworks, carpediem, or asthosus, those mods are way better"
 version: "0a"
 minGameVersion: "158"
 dependencies: [ ]
 hidden: false
 main: "g8.Main"
+java: true
