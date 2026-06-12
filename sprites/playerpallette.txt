@@ -3,7 +3,12 @@ sharded yellow
 #EAB778 :: mid
 #D4826B :: dark
 
-primordial ferric
-e8c489 light
-c2a576 mid
-b39360 dark
+metallic
+#a4acba :: light
+#6d727a :: mid
+#35373b :: dark
+
+metallic / silicon
+#d4d5d6 :: light
+#838485 :: mid
+#393a3b :: dark
