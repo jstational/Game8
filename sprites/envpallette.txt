@@ -1,0 +1,29 @@
+primordial ferric stone
+#e8c489 :: light
+#c2a576 :: mid
+#b39360 :: dark
+
+ferric stone
+#c7a961 :: light
+#9c7c49 :: mid
+#75503e :: dark
+
+primordial crystal
+:: light
+:: med
+:: dark
+
+crystal
+#82717f :: light
+#534457 :: med
+#2b262e :: dark
+
+carbon
+#464c5e :: light
+#2e3342 :: mid
+#1a1d26 :: dark
+
+silicon
+#52545c :: light
+#373940 :: mid
+#1f2126 :: dark
