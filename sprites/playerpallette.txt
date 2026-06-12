@@ -1,0 +1,8 @@
+sharded yellow
+ffd27e light
+d4806b dark
+
+primordial ferric
+e8c489 light
+c2a576 mid
+b39360 dark
