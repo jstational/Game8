@@ -3,6 +3,7 @@ apply plugin: "java"
 version = '1.0'
 
 sourceSets.main.java.srcDirs = ["src"]
+sourceSets.main.resources.srcDirs += ["jsonw"]
 
 repositories{
     mavenCentral()
@@ -79,11 +80,15 @@ jar{
     }
 
     from(projectDir){
-        include "mod.hjson"
+        include "mod.json" // mod.json
     }
 
     from("assets/"){
         include "**"
+    }
+
+    from("jsonw/"){
+        include "content" // content folder so i dont need loadContent anymore
     }
 }
 
