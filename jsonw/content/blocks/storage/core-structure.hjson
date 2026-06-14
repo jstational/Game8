@@ -1,16 +1,16 @@
-type: CoreBlock
+type: "CoreBlock"
 name: "Core: Structure"
 health: 1500
 itemCapacity: 5000
 size: 4
-category: effect
+category: "effect"
 alwaysUnlocked: true
 incinerateNonBuildable: false
 isFirstTier: true
 captureInvicibility: 0
 research: {
   root: true
-  planet: cryothera
-  name: Cryothera
+  planet: "cryothera"
+  name: "Cryothera"
   requiresUnlock: false
 }
