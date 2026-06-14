@@ -9,7 +9,11 @@ public class PressureBlock extends Block {
         update = true;
     }
     public static class presssys {
-        public int sec = 0; // use X (lowest value) first
+        public boolean willACT = false; // use X (lowest value) first
     }
-    public float pressure;
+    public float volume;
+    public float maxpress;
+    public class PressureBuilding extends Building {
+        public float pressure;
+    }
 }

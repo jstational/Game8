@@ -5,9 +5,12 @@ import arc.math.geom.Vec2;
 import mindustry.gen.Building;
 import arc.scene.ui.layout.Table;
 import game8.world.blocks.PressureCrafter;
+import game8.block.*;
+import game8.world.blocks.PressureBlock;
 
 public class PressureConsume extends Consume {
     public Vec2 pressreq;
+    public boolean recAT;
     public void output(float amt) {
     }
     @Override
@@ -15,17 +18,37 @@ public class PressureConsume extends Consume {
     }
     @Override
     public boolean valid(Building build) {
-        if (build instanceof PressureBlock) {
-           if (build.presssys.sec = 1) {
-            if (build.pressure => build.block.pressreq.y) {
-                build.pressys.sec = 0;
+        if (build.block instanceof PressureBlock block) {
+            if (build instanceof PressureBlock.PressureBuilding bld) {
+                if (block.recAT == true) {
+                    if (bld.presssys.willACT == true) {
+                        if (bld.pressure >= block.pressreq.y) {
+                            bld.presssys.willACT = false;
+                            return true;
+                        }
+                    } else {
+                        if (bld.pressure >= block.pressreq.x) {
+                            bld.presssys.willACT = true;
+                        }
+                    }
+                } else {
+                    if (bld.presssys.willACT == false) {
+                        if (bld.pressure <= block.pressreq.x) {
+                            bld.presssys.willACT = true;
+                        }
+                    } else {
+                        if (bld.pressure >= block.pressreq.y) {
+                            bld.presssys.willACT = false;
+                            return true;
+                        }
+                    }
+                }
+                return false;
+            } else {
+                return false;
             }
-           } else {
-            if (build.pressure <= build.block.pressreq.x) {
-                build.presssys.sec = 1;
-            }
-           }
+        } else {
+            return true;
         }
-        return false;
     }
 }
