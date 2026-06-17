@@ -4,5 +4,7 @@ import mindustry.gen.Building;
 import arc.struct.Seq;
 
 public class PressureSystem {
-    // TODO
+    public void Update {
+        // TODO
+    }
 }
