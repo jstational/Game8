@@ -1,4 +1,4 @@
-Mixin will be implemented to replace PressureBlock
+Mixin will be implemented to replace PressureBlock, so i dont have to define custom classes that implement Pressure for each block i use
 
 Make the code compatible with mixin now :>
 pls stawp java is too complex alreadyyyyy

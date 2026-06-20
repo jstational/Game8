@@ -1,16 +1,16 @@
 package game8.world.consumers;
 
 import mindustry.world.consumers.*;
-import arc.math.geom.Vec2;
+import game8.utils.Press2;
 import mindustry.gen.Building;
 import arc.scene.ui.layout.Table;
 import game8.world.blocks.PressureCrafter;
 import game8.blocks.*;
 import game8.world.blocks.PressureBlock;
-import game8.Util;
+import game8.utils.Util;
 
 public class PressureConsume extends Consume {
-    public Vec2 pressreq;
+    public Press2 pressreq;
     public boolean recAT;
     public boolean consumeThis;
     @Override
@@ -21,22 +21,22 @@ public class PressureConsume extends Consume {
         if ((boolean) Util.contentField(build, "consumeThis") == true) {
             if (((boolean) Util.contentField(build, "recAT")) == true) {
                 if (build.PressureInternal.willACT == true) {
-                    if (build.pressure >= ((Vec2) Util.contentField(build, "pressreq")).y) {
+                    if (build.pressure >= ((Press2) Util.contentField(build, "pressreq")).greatest) {
                         build.PressureInternal.willACT = false;
                         return true;
                     }
                 } else {
-                    if (build.pressure >= ((Vec2) Util.contentField(build, "pressreq")).x) {
+                    if (build.pressure >= ((Press2) Util.contentField(build, "pressreq")).least) {
                         build.PressureInternal.willACT = true;
                     }
                 }
             } else {
                 if (build.PressureInternal.willACT == false) {
-                    if (build.pressure <= ((Vec2) Util.contentField(build, "pressreq")).x) {
+                    if (build.pressure <= ((Press2) Util.contentField(build, "pressreq")).least) {
                         build.PressureInternal.willACT = true;
                     }
                 } else {
-                    if (build.pressure >= ((Vec2) Util.contentField(build, "pressreq")).y) {
+                    if (build.pressure >= ((Press2) Util.contentField(build, "pressreq")).greatest) {
                         build.PressureInternal.willACT = false;
                         return true;
                     }

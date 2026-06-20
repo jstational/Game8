@@ -1,4 +1,4 @@
-package game8.world.pressuredistribution;
+package game8.world.pressuredistrib;
 
 import mindustry.gen.Building;
 
