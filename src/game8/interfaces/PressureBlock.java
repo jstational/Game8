@@ -1,3 +1,9 @@
 package game8.interfaces;
 
-public interface PressureBlock; // todo!!!
+// only a stub
+
+public interface PressureBlock {
+    public float getPressure {}
+    public float getSystemVolume {}
+    public float getSystemPressure {}
+}
