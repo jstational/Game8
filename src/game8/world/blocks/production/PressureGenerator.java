@@ -7,5 +7,4 @@ import mindustry.world.blocks;
 
 public class PressureProducer extends Block {
     public Press2 PressureConfig = new Press2(0,0);
-    public boolean recAT
 }

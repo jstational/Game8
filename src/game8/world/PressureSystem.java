@@ -5,6 +5,7 @@ import arc.struct.Seq;
 import game8.utils.Util;
 import mindustry.world.blocks.*;
 import game8.world.blocks.*;
+import game8.utils.Grouping;
 
 /** PressureSystem is supposed to be a data type based off of Seq<Building>.
  * This will have merging two or more PressureSystems based on a single Building, Splitting into more PressureSystems based on a Building contained in the PressureSystem 
@@ -18,11 +19,11 @@ public class PressureSystem {
 
     public PressureSystem(Seq<Building> blds) {}
 
-    public PressureSystem StaticNewSystem(Building) {
-        Util.getGrouping(Building, "PressureConfig", (Object) "!/null")
+    public PressureSystem StaticNewSystem(Building build) {
+        Grouping.getGrouping(build, "PressureConfig", (Object) "!/null");
     }
-    public void DynamicNewSystem(Building) {}
-    public void Update(Building) {}
-    public void Merge(Building) {}
-    public void Split(Building) {}
+    public void DynamicNewSystem(Building build) {}
+    public void Update(Building build) {}
+    public void Merge(Building build) {}
+    public void Split(Building build) {}
 }

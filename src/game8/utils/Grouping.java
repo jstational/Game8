@@ -19,9 +19,9 @@ public class Grouping {
 
     @SafeVarargs
     public Grouping getGrouping(Building build, Class<? extends Block>... classes) {
-        private Grouping group = new Grouping();
-        private Seq<Building> track = new Seq<>();
-        private Intset trackPos = new IntSet();
+        Grouping group = new Grouping();
+        Seq<Building> track = new Seq<>();
+        IntSet trackPos = new IntSet();
 
         track.add(build);
         trackPos.add(build.pos());
@@ -31,7 +31,7 @@ public class Grouping {
             group.members.add(cur);
 
             cur.proximity.each(other -> {
-                if(!trackPos.contains(other.pos()) && other.team == target.team && isInstanceOf(other, classes)) {
+                if(!trackPos.contains(other.pos()) && other.team == build.team && isInstanceOf(other, classes)) {
                     trackPos.add(other.pos());
                     track.add(other);
                 }
@@ -40,9 +40,9 @@ public class Grouping {
         return group;
     }
     public Grouping getGrouping(Building build, String field, Object fcont) {
-        private Grouping group = new Grouping();
-        private Seq<Building> track = new Seq<>();
-        private Intset trackPos = new IntSet();
+        Grouping group = new Grouping();
+        Seq<Building> track = new Seq<>();
+        IntSet trackPos = new IntSet();
 
         track.add(build);
         trackPos.add(build.pos());
@@ -52,7 +52,7 @@ public class Grouping {
             group.members.add(cur);
 
             cur.proximity.each(other -> {
-                if(!trackPos.contains(other.pos()) && other.team == target.team && checkFieldCondition(fcont, other, field)) {
+                if(!trackPos.contains(other.pos()) && other.team == build.team && checkFieldCondition(fcont, other, field)) {
                     trackPos.add(other.pos());
                     track.add(other);
                 }

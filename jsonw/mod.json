@@ -7,6 +7,6 @@
     "minGameVersion": 158,
     "dependencies": [ ],
     "hidden": false,
-    "main": "g8.Main",
+    "main": "game8.Game8",
     "java": true
 }
