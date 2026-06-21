@@ -7,7 +7,7 @@ import mindustry.world.blocks.*;
 import game8.world.blocks.*;
 import game8.utils.Grouping;
 
-/** PressureSystem is supposed to be a data type based off of Seq<Building>.
+/** PressureSystem is supposed to be a data type based off of Grouping.
  * This will have merging two or more PressureSystems based on a single Building, Splitting into more PressureSystems based on a Building contained in the PressureSystem 
  * This should ONLY be obtained by Building.PressureSystem.
  * It should always call Update on split or merge. */
@@ -15,12 +15,12 @@ import game8.utils.Grouping;
 // I dont know a single thing about dynamic stuff
 
 public class PressureSystem {
-    private final Seq<Building> buildings;
+    private final Grouping buildings;
 
-    public PressureSystem(Seq<Building> blds) {}
+    public PressureSystem(Grouping blds) {}
 
     public PressureSystem StaticNewSystem(Building build) {
-        Grouping.getGrouping(build, "PressureConfig", (Object) "!/null");
+        Grouping.getGrouping(build, "HasPressure", (Object) true);
     }
     public void DynamicNewSystem(Building build) {}
     public void Update(Building build) {}
