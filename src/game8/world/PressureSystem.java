@@ -14,18 +14,23 @@ import game8.utils.Grouping;
  * To get SystemPressure, it should calculate the total output of ALL PressureGenerators in the system divided by ( The total volume of all blocks + 1 ). */
 // oh no not this again
 // I dont know a single thing about dynamic stuff
+// how do i obtain a pressuresystem of a building without checking every time?
+// i have an idea: for every adjacent update, check the whole system that it is in and remap all pressys of the grouping accordingly
 
 public class PressureSystem {
     private final Grouping buildings;
 
-    public PressureSystem(Grouping this.buildings) {}
-
-    public PressureSystem StaticNewSystem(Building build) {
-        return Grouping.getGrouping(build, "hasPressure", (Object) true);
+    public PressureSystem(Grouping builds) {
+        this.buildings = builds;
     }
-    public static void DynamicNewSystem(Building build) {}
+
+    public static PressureSystem getSystem(Building build) {
+        return new PressureSystem(Grouping.getGrouping(build, "hasPressure", (Object) true));
+    }
     public static void Update(Building build) {}
     public static void Merge(Building build) {}
     public static void Split(Building build) {}
-    public static float SystemPressure(PressureSystem system) {}
+    public static float SystemPressure(PressureSystem system) {
+        return 0f;
+    }
 }

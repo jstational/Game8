@@ -10,6 +10,7 @@ import game8.world.PressureSystem;
 
 @Mixin(targets = "mindustry.gen.Building")
 public abstract class MixinBuilding {
-    @Unique public boolean willACT = false;
-    @Unique public PressureSystem presssys = null;
+    @Unique public boolean WillACT = false;
+    @Unique public PressureSystem PressSys = null;
+    @Unique public float PressValue = 0;
 }

@@ -14,7 +14,7 @@ public class PressureConsume extends Consume {
     @Override
     public boolean valid(Building build) {
         if ((boolean) Util.contentField(build, "consumePressure") == true) {
-            if ((Util.contentField(build, "actAT")) == 0) {
+            if ((int) (Util.contentField(build, "actAT")) == 0) {
                 if (build.willACT == true) {
                     if (PLACEHOLDER_PRESSURESYSTEM >= ((Press2) Util.contentField(build, "pressreq")).greatest) {
                         build.willACT = false;

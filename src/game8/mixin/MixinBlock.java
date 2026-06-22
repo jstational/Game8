@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.Unique;
 @Mixin(Block.class)
 public abstract class MixinBlock extends UnlockableContent implements PressureBlock {
     // false, no pressure module
-    @Unique public @NoPatch boolean HasPressure = false;
+    @Unique public @NoPatch boolean hasPressure = false;
     @Unique public float Volume = 0;
     @Unique public Press2 MaxPress = new Press2(0,0);
 }

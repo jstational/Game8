@@ -1,8 +1,8 @@
 package game8.utils;
 
 import arc.struct.Seq;
-import static game8.utils.isInstanceOf;
-import static game8.utils.contentField;
+import static game8.utils.Util.isInstanceOf;
+import static game8.utils.Util.contentField;
 import mindustry.gen.Building;
 import mindustry.world.Block;
 import arc.math.IntSet;
