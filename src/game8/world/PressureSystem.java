@@ -2,7 +2,7 @@ package game8.world;
 
 import mindustry.gen.Building;
 import arc.struct.Seq;
-import game8.utils.Util;
+import static game8.utils.Util.*;
 import mindustry.world.blocks.*;
 import game8.world.blocks.*;
 import game8.utils.Grouping;
@@ -20,7 +20,7 @@ import game8.utils.Grouping;
 public class PressureSystem {
     private final Grouping buildings;
 
-    public float PressFormula(float pressure, float volume) {
+    private float PressFormula(float pressure, float volume) {
         return (pressure / (volume + 1f))
     }
 
@@ -35,11 +35,19 @@ public class PressureSystem {
         PressureSystem build.PressSystem = getSystem(build)
     }
     public static float SystemPressure(PressureSystem system) {
-        return 0f;
+        float totalOutput = 0f;
+        for (Building build : system.buildings.getMembers()) {
+            totalOutput += (float) Util.contentField(build, "PressValue");
+        }
+        return system.PressFormula(totalOutput, SystemVolume(system));
     }
-    /** what about looping through all PressureGenerators in system and doing total output of all pressuregenerators and into PressFormula */
+    /** looping through all PressureGenerators in system and doing total output of all pressuregenerators and into PressFormula */
     public static float SystemVolume(PressureSystem system) {
-        return 0f;
+        float total = 0f;
+        for (Building build : system.buildings.getMembers()) {
+            total += (float) Util.contentField(build, "Volume");
+        }
+        return total;
     }
     /** just totaling the volume content field in all the blocks in system? */
 }
