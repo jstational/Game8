@@ -31,9 +31,6 @@ public class PressureSystem {
     public static PressureSystem getSystem(Building build) {
         return new PressureSystem(Grouping.getGrouping(build, "hasPressure", (Object) true));
     }
-    public static void Update(Building build) {
-        PressureSystem build.PressSystem = getSystem(build);
-    }
     public static float SystemPressure(PressureSystem system) {
         float totalOutput = 0f;
         for (Building build : system.buildings.getMembers()) {
