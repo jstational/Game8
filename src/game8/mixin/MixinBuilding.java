@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import game8.world.PressureSystem;
+import static game8.world.PressureSystem;
 import static game8.utils.Util;
 
 @Mixin(targets = "mindustry.gen.Building")
@@ -18,8 +18,12 @@ public abstract class MixinBuilding {
 
     @Inject(method = "updateTile", at = @At("HEAD"))
     public void updateTile(CallbackInfo ci) {
-        if((PLACEHOLDER_PRESSURESYSTEM > ContentField(this, "MinMaxPress").greatest || PLACEHOLDER_PRESSURESYSTEM < ContentField(this, "MinMaxPress").least) && ContentField(this, "hasPressure") == true) {
+        if((this.systemPressure() > ContentField(this, "MinMaxPress").greatest || this.systemPressure() < ContentField(this, "MinMaxPress").least) && ContentField(this, "hasPressure") == true) {
             this.kill;
         }
+    }
+    @Inject(method = "onProximityUpdate", at = @At("TAIL"))
+    public void onProximityUpdate (CallbackInfo ci){
+        getSystem(this);
     }
 }

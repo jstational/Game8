@@ -16,22 +16,22 @@ public class PressureConsume extends Consume {
         if ((Boolean) Util.contentField(build, "consumePressure") == true) {
             if ((int) (Util.contentField(build, "ActAT")) == 0) {
                 if (build.WillACT == true) {
-                    if (PLACEHOLDER_PRESSURESYSTEM >= ((Press2) Util.contentField(build, "pressreq")).greatest) {
+                    if (build.systemPressure() >= ((Press2) Util.contentField(build, "pressreq")).greatest) {
                         build.WillACT = false;
                         return true;
                     }
                 } else {
-                    if (PLACEHOLDER_PRESSURESYSTEM >= ((Press2) Util.contentField(build, "pressreq")).least) {
+                    if (build.systemPressure() >= ((Press2) Util.contentField(build, "pressreq")).least) {
                         build.WillACT = true;
                     }
                 }
             } else {
                 if (build.WillACT == false) {
-                    if (PLACEHOLDER_PRESSURESYSTEM <= ((Press2) Util.contentField(build, "pressreq")).least) {
+                    if (build.systemPressure() <= ((Press2) Util.contentField(build, "pressreq")).least) {
                         build.WillACT = true;
                     }
                 } else {
-                    if (PLACEHOLDER_PRESSURESYSTEM >= ((Press2) Util.contentField(build, "pressreq")).greatest) {
+                    if (build.systemPressure() >= ((Press2) Util.contentField(build, "pressreq")).greatest) {
                         build.WillACT = false;
                         return true;
                     }

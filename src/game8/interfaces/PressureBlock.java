@@ -1,17 +1,14 @@
 package game8.interfaces;
 
-import game8.Wip;
+import game8.world.PressureSystem;
 
 // only a stub
 
 public interface PressureBlock {
-    default float getPressure() {
-        return 0f;
+    default float systemVolume() {
+        return getSystemVolume(this.PressureSystem);
     }
-    default float getSystemVolume() {
-        return 0f;
-    }
-    default float getSystemPressure() {
-        return 0f;
+    default float systemPressure() {
+        return getSystemPressure(this.PressureSystem);
     }
 }
