@@ -2,35 +2,15 @@ name: CI
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
 
 jobs:
-  check-if-should-build:
-    name: get-state
-    runs-on: windows-latest
-    outputs:
-      out: ${{ steps.get-state.outputs.out }}
-    permissions:
-      issues: read
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    steps:
-      - name: get-state
-        id: get-state
-        run: |
-          $state = gh issue view 1 --json body --jq '.body'
-          echo "out=$state" >> $env:GITHUB_OUTPUT
-
   build:
-    name: "build"
+    name: build
     runs-on: windows-latest
-    needs: check-if-should-build
-    if: ${{ needs.check-if-should-build.outputs.out == 'build on push: true' }}
-    permissions:
-      actions: write
     
     steps:
-      - name: cache-jdk17
+      - name: cache-jdk
         uses: actions/setup-java@v4
         with:
           java-version: '17'
@@ -43,6 +23,6 @@ jobs:
       - name: upload
         uses: actions/upload-artifact@v4
         with: 
-          name: "game8"
+          name: 'game8'
           path: build/libs/*.jar
   
