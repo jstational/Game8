@@ -1,3 +1,7 @@
 package game8.utility.buildsystems;
 
-public class PressureSystem {}
+import game8.utility.buildsystems.*;
+
+public class PressureSystem {
+    public BuildGrouping grouping;
+}

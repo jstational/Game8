@@ -1,7 +1,8 @@
 package game8.utility;
 
 public class Press {
+    public float value;
     public Press(float x) {
-        this = x;
+        this.value = x;
     }
 }
