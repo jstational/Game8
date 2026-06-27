@@ -1,4 +1,4 @@
-package game8.world.blocks.turrets;
+package game8.world.blocks.defense.turrets;
 
 import game8.world.*;
 

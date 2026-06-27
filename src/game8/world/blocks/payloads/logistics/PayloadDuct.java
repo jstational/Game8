@@ -1,4 +1,4 @@
-package game8.world.blocks.payload.logistics;
+package game8.world.blocks.payloads.logistics;
 
 import game8.world.*;
 
