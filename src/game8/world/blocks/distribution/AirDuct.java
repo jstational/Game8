@@ -1,4 +1,4 @@
-package game8.world.distribution;
+package game8.world.blocks.distribution;
 
 import game8.world.*;
 

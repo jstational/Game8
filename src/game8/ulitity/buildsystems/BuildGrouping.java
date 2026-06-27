@@ -4,5 +4,5 @@ import arc.struct.Seq;
 import mindustry.gen.Building;
 
 public class BuildGrouping {
-    public Seq<Building>
+    public Seq<Building> members;
 }
