@@ -1,5 +1,10 @@
-package game8.world;
+package game8.interfaces;
 
-import mindustry.world.Block;
+import arc.struct.seq;
+import mindustry.gen.Building;
 
-public class PressureBlock extends Block {}
+public interface PressureBlock {
+    Seq<Building> system();
+    Float localpressure();
+    Float pressure();
+}
