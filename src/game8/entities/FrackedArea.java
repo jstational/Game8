@@ -1,3 +1,8 @@
 package game8.entities;
 
-public class FrackedArea {}
+// class for fracked areas
+public class FrackedArea {
+    public int FrackLevel;
+    // sphere
+    public int AreaSize;
+}
