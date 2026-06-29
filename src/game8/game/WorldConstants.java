@@ -17,5 +17,5 @@ public class WorldConstants {
     public float SeaBed = -8f;
     /** I dont know, this should depend on the current planet's MaxAtmosphere! */
     public float WorldAtmosphereHeight = 1000f;
-    public float WorldDefaultGravity = 2.3;
+    public float WorldDefaultGravity = 2.3f;
 }
