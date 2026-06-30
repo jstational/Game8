@@ -86,6 +86,10 @@ jar{
     from("jsonw/"){
         include "**"
     }
+
+    from(projectDir){
+        include "mod.json"
+    }
 }
 
 tasks.register('deploy', Jar){
