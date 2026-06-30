@@ -84,7 +84,7 @@ jar{
     }
 
     from("jsonw/"){
-        include "**"
+        include "content"
     }
 
     from(projectDir){
