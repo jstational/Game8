@@ -4,6 +4,7 @@ import arc.struct.Seq;
 import mindustry.gen.Building;
 
 public interface PressureBuild {
-    Seq<Building> system();
-    Float pressure();
+    Seq<Building> System();
+    Float Pressure();
+    Float Volume();
 }

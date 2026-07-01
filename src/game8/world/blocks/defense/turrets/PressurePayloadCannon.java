@@ -5,5 +5,5 @@ import game8.world.blocks.defense.turrets.*;
 import game8.world.*;
 
 public class PressurePayloadCannon extends PayloadCannon {
-    public class PressurePayloadCannonBuild extends PayloadCannonBuilding implements PressureBuild {}
+    public class PressurePayloadCannonBuild extends PayloadCannonBuild implements PressureBuild {}
 }

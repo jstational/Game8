@@ -4,5 +4,5 @@ import mindustry.gen.Building;
 import mindustry.world.Block;
 
 public class FuelStation extends Block {
-    public class FuelStationBuild extends Build {}
+    public class FuelStationBuild extends Building {}
 }
