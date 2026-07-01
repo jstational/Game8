@@ -13,9 +13,9 @@ public class PressureLogicBlock extends Block {
         public Building build;
 
         public PressureLogicLink(int x, int y, String name) {
-            this.x = x
-            this.y = y
-            this.name = name
+            this.x = x;
+            this.y = y;
+            this.name = name;
         }
     }
     public class PressureLogicBuild extends Building {}

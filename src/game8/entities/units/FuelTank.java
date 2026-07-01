@@ -1,3 +1,7 @@
 package game8.entities.units;
 
-public class FuelTank {}
+import arc.math.geom.*;
+
+public class FuelTank {
+    public final Vec2 position;
+}
