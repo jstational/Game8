@@ -8,11 +8,21 @@
 
 ---
 
-Weird **cool mod** i made!!!
+Really, really early in development, but i have some large ambitions
 
-> still working on this mod     
-> and that means **wip**
+this adds a new planet, cool right?
+
+> [!WARNING]
+> this mod adds nothing rn
+> 
+> i dont know if this mod works on versions before v8
 
 ---
 
+## overly underestimating moddding
+
+- Pressure system that replaces power
+- i dont know
+
+---
 version ****???****
