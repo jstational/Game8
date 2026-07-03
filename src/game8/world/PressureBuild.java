@@ -5,7 +5,11 @@ import mindustry.gen.Building;
 
 public interface PressureBuild {
     Seq<Building> System();
-    Float Pressure();
-    Float Volume();
-    Float PressVol();
+    float Pressure() {
+        private float SysTotalPressure;
+        private float SysFinalPressure;
+
+        return SysFinalPress;
+    }
+    float Volume();
 }

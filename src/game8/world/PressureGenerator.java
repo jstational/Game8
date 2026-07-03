@@ -4,5 +4,5 @@ import game8.world.*;
 
 public interface PressureGenerator extends PressureBuild {
     float PressureOut();
-    boolean IsPressureGenerator();
+    public boolean IsPressureGenerator() = true;
 }

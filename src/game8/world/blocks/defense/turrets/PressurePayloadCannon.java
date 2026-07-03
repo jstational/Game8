@@ -8,9 +8,5 @@ public class PressurePayloadCannon extends PayloadCannon {
     public PressurePayloadCannon(String name) {
         super(name);
     }
-    public class PressurePayloadCannonBuild extends PayloadCannonBuild implements PressureBuild {
-        public float Pressure;
-        @Override
-        public float Pressure() {}
-    }
+    public class PressurePayloadCannonBuild extends PayloadCannonBuild implements PressureBuild {}
 }
