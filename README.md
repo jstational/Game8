@@ -19,10 +19,18 @@ this adds a new planet, cool right?
 
 ---
 
+## i find inspiration in these mods
+
+- [Carpe Diem](https://github.com/nullotte/Carpe-Diem)
+- [Steamworks](https://github.com/uujuju1/steam-works)
+- [New Horizon](https://github.com/yuria-shikibe/newhorizonmod)
+- [Aquarion](https://github.com/twcash/aquarion)
+
+---
+
 ## overly underestimating moddding
 
-- Pressure system that replaces power
-- i dont know
+- i aim for the $$\color{#777777}{\text{farlands}}$$ vibe
 
 ---
 version ****???****
