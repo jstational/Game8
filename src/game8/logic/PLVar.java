@@ -8,7 +8,8 @@ public class PLVar {
         this.label = name;
     }
 
-    public Set(String name, Float value) {
+    public boolean Set(String name, Float value) {
         this.value = value
+        return false;
     }
 }

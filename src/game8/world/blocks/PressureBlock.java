@@ -1,6 +1,6 @@
 package game8.world.blocks;
 
 public interface PressureBlock {
-    public boolean ConnectPressureSystems;
-    public float Volume;
+    public boolean ConnectPressureSystems = false;
+    public float Volume = 0f;
 }
