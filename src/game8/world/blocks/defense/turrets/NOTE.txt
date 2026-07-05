@@ -1,3 +1,0 @@
-fuel turrets are to be made with vanilla classes
-
-payload cannon class is for fuel cannons

@@ -7,7 +7,7 @@ import mindustry.logic.*;
 public class UnitRadar extends Block {
     public float Range = 20f;
 
-    public Radar(String name) {
+    public UnitRadar(String name) {
         super(name);
     }
 
