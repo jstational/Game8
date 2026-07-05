@@ -6,7 +6,7 @@ import mindustry.logic.*;
 
 public class PressureLogicBlock extends Block {
     public int MaxInstructions = 34;
-    public float MaxVarValue = 40f
+    public float MaxVarValue = 40f;
     public float MinVarValue = -3f;
 
     public PressureLogicBlock(String name) {

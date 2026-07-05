@@ -9,5 +9,5 @@ public class PressureTurret extends Block {
     public PressureTurret(String name) {
         super(name);
     }
-    public class PressureTurretBuild extends Building implements PressureBuild {}
+    public class PressureTurretBuild extends Building {}
 }

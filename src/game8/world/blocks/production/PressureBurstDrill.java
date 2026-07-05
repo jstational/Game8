@@ -8,5 +8,5 @@ public class PressureBurstDrill extends Block {
     public PressureBurstDrill(String name) {
         super(name);
     }
-    public class PressureBurstDrillBuild extends Building implements PressureBuild {}
+    public class PressureBurstDrillBuild extends Building {}
 }

@@ -9,7 +9,7 @@ public class PLVar {
     }
 
     public boolean Set(String name, Float value) {
-        this.value = value
+        this.value = (Object) value;
         return false;
     }
 }
