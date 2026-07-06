@@ -1,16 +1,16 @@
-package game8.world.blocks.production;
+package game8.world.blocks.defense.turrets;
 
-import mindustry.gen.Building;
 import mindustry.world.Block;
+import mindustry.gen.Building;
 import game8.world.blocks.*;
 
-public class PressureBurstDrill extends Block {
+public class BasePressureTurret extends Block {
     public PressureBlock PressureBlock = new PressureBlock();
 
-    public PressureBurstDrill(String name) {
+    public PressureTurret(String name) {
         super(name);
     }
-    public class PressureBurstDrillBuild extends Building {
+    public class BasePressureTurretBuild extends Building {
         public PressureBuild PressureBuild = new PressureBuild();
     }
 }

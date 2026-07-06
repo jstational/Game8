@@ -1,17 +1,17 @@
 package game8.world.blocks.defense.turrets;
 
+import mindustry.world.Block;
 import mindustry.gen.Building;
-import game8.world.blocks.defense.turrets.*;
-import arc.struct.Seq;
 import game8.world.blocks.*;
+import game8.world.blocks.defense.turrets.*;
 
-public class PressurePayloadCannon extends PayloadCannon {
+public class LiquidPressureTurret extends BasePressureTurret {
     public PressureBlock PressureBlock = new PressureBlock();
 
-    public PressurePayloadCannon(String name) {
+    public PressureTurret(String name) {
         super(name);
     }
-    public class PressurePayloadCannonBuild extends PayloadCannonBuild {
+    public class LiquidPressureTurretBuild extends BasePressureTurretBuild {
         public PressureBuild PressureBuild = new PressureBuild();
     }
 }
