@@ -8,7 +8,7 @@ import game8.world.blocks.defense.turrets.*;
 public class ItemPressureTurret extends BasePressureTurret {
     public PressureBlock PressureBlock = new PressureBlock();
 
-    public PressureTurret(String name) {
+    public ItemPressureTurret(String name) {
         super(name);
     }
     public class ItemPressureTurretBuild extends BasePressureTurretBuild {

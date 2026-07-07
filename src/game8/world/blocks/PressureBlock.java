@@ -16,7 +16,7 @@ public class PressureBlock {
         this.Volume = 0f;
         this.ConnectPressureSystems = false;
         this.MaxGeneratedPressure = 0f;
-        this.MinGeneratedPressure 0f;
+        this.MinGeneratedPressure = 0f;
         this.GeneratePressure = false;
     }
 }
