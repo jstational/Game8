@@ -9,7 +9,11 @@ public class PLVar {
     }
 
     public boolean Set(String name, Float value) {
-        this.value = (Object) value;
-        return false;
+        if(value == this.value) {
+            return false;
+        } else {
+            this.value = (Object) value;
+            return true;
+        }
     }
 }
