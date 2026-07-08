@@ -9,5 +9,5 @@ public class PLInstruction {
     public PLObject ParamB;
     public PLObject ParamC;
 
-    public PLInstruction()
+    public PLInstruction() {}
 }
