@@ -4,7 +4,7 @@
     "author": "jstation",
     "description": "Distant lands\n[gray]try steamworks, carpediem, or asthosus, those mods are way better",
     "version": "0a",
-    "minGameVersion": 158.1,
+    "minGameVersion": 159.1,
     "dependencies": [ ],
     "hidden": false,
     "main": "game8.Game8",
