@@ -4,4 +4,6 @@ public abstract class AreaEntity {
     public float x;
     public float y;
     public float areaSize;
+
+    public AreaEntity() {}
 }

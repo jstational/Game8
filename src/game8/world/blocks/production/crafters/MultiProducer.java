@@ -7,9 +7,9 @@ import mindustry.type.*;
 
 public class MultiProducer extends Block {
     public PressureBlock PressureBlock = new PressureBlock();
-    public ItemSeq ProducedItems = new ItemSeq();
-    public LiquidSeq ProducedLiquids = new LiquidSeq();
-    public PayloadSeq ProducedPayloads = new PayloadSeq();
+    public ItemSeq ProducedItems;
+    public LiquidSeq ProducedLiquids;
+    public PayloadSeq ProducedPayloads;
 
     public MultiProducer(String name) {
         super(name);

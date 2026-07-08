@@ -2,6 +2,7 @@ package game8.world.blocks.logic;
 
 import mindustry.world.Block;
 import mindustry.gen.Building;
+import game8.logic.*;
 
 public class PressureLogicBlock extends Block {
     public int MaxInstructions = 34;
@@ -27,7 +28,7 @@ public class PressureLogicBlock extends Block {
     }
 
     public class PressureLogicBuild extends Building {
-        // code
-        public String[] compiled;
+        public PLInstruction[] code;
+        public PLExecutor executor;
     }
 }

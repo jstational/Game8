@@ -9,7 +9,7 @@ public class ManualMultiCrafter extends MultiProducer {
     public ManualMultiCrafter(String name) {
         super(name);
     }
-    public class ManualMultiCrafterBuild extends Building {
+    public class ManualMultiCrafterBuild extends MultiProducerBuild {
         public PressureBuild PressureBuild = new PressureBuild();
 
         @Override
