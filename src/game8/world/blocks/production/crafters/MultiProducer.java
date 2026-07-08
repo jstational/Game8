@@ -1,4 +1,4 @@
-package game8.world.generate.blocks.production.crafters;
+package game8.world.blocks.production.crafters;
 
 import mindustry.gen.Building;
 import mindustry.world.Block;

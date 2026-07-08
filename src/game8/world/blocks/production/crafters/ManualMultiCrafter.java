@@ -1,4 +1,4 @@
-package game8.world.generate.blocks.production.crafters;
+package game8.world.blocks.production.crafters;
 
 import mindustry.gen.Building;
 import mindustry.world.Block;
@@ -9,7 +9,7 @@ public class ManualMultiCrafter extends MultiProducer {
     public ManualMultiCrafter(String name) {
         super(name);
     }
-    public class MultiProducerBuild extends Building {
+    public class ManualMultiCrafterBuild extends Building {
         public PressureBuild PressureBuild = new PressureBuild();
 
         @Override
