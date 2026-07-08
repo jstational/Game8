@@ -8,7 +8,7 @@ import arc.graphics.*;
 import arc.audio.*;
 
 public class VolcanicEruption extends Weather {
-    public AtlasRegion RockTexture = new TextureRegion();
+    public TextureRegion RockTexture = new TextureRegion();
     public Effect LavaPop = new Effect();
     public Effect InitialEffect = new Effect();
     public Color LavaInitialColor = new Color();

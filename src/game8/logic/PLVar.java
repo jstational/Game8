@@ -5,14 +5,14 @@ public class PLVar {
     public float Value = 0f;
 
     public PLVar(String name) {
-        this.label = name;
+        this.Label = name;
     }
 
     public boolean Set(String name, Float value) {
-        if(value == this.value) {
+        if(value == this.Value) {
             return false;
         } else {
-            this.value = (Object) value;
+            this.Value = value;
             return true;
         }
     }
