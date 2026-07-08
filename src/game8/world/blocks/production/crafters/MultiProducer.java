@@ -8,7 +8,7 @@ import mindustry.type.*;
 public class MultiProducer extends Block {
     public PressureBlock PressureBlock = new PressureBlock();
     public ItemSeq ProducedItems;
-    public LiquidSeq ProducedLiquids;
+    public LiquidStack ProducedLiquid;
     public PayloadSeq ProducedPayloads;
 
     public MultiProducer(String name) {
