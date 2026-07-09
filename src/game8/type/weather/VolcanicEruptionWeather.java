@@ -8,7 +8,7 @@ import arc.graphics.*;
 import arc.audio.*;
 import game8.type.weather.live.VESource;
 
-public class VolcanicEruption extends DynamicWeather {
+public class VolcanicEruptionWeather extends DynamicWeather {
     public TextureRegion RockTexture = new TextureRegion();
     public Effect lavaPop = new Effect();
     public Effect initialEffect = new Effect();
@@ -21,10 +21,10 @@ public class VolcanicEruption extends DynamicWeather {
     public Sound intialSound = new Sound();
     public Sound burnSound = new Sound();
 
-    public VolcanicEruption(String name) {
+    public VolcanicEruptionWeather(String name) {
         super(name);
     }
 
     @Override
-    public void invoke(float x, float y, int level, float time) {}
+    public void invoke(float x, float y, float time, int level) {}
 }
