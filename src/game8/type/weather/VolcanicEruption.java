@@ -1,6 +1,6 @@
 package game8.type.weather;
 
-import mindustry.type.*;
+import game.type.*;
 import arc.math.geom.*;
 import arc.graphics.g2d.*;
 import mindustry.entities.*;
@@ -8,7 +8,7 @@ import arc.graphics.*;
 import arc.audio.*;
 import game8.type.weather.live.VESource;
 
-public class VolcanicEruption extends Weather {
+public class VolcanicEruption extends DynamicWeather {
     public TextureRegion RockTexture = new TextureRegion();
     public Effect lavaPop = new Effect();
     public Effect initialEffect = new Effect();
