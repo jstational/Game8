@@ -25,7 +25,6 @@ public class VolcanicEruption extends DynamicWeather {
         super(name);
     }
 
-    public void invoke(float x, float y, int level) {
-        VESource.invoke(x, y, level);
-    }
+    @Override
+    public void invoke(float x, float y, int level, float time) {}
 }
