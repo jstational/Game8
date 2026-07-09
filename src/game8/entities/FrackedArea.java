@@ -5,7 +5,7 @@ import mindustry.gen.Building;
 
 // class for fracked areas
 public class FrackedArea extends AreaEntity {
-    public int FrackLevel;
+    public int frackLevel;
 
     public FrackedArea() {}
 }

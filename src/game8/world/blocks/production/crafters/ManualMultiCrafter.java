@@ -10,8 +10,6 @@ public class ManualMultiCrafter extends MultiProducer {
         super(name);
     }
     public class ManualMultiCrafterBuild extends MultiProducerBuild {
-        public PressureBuild PressureBuild = new PressureBuild();
-
         @Override
         public void Invoke() {
             super.Invoke();

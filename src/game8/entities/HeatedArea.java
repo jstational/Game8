@@ -3,7 +3,7 @@ package game8.entities;
 import game8.entities.*;
 
 public class HeatedArea extends AreaEntity {
-    public int Heat;
+    public int heat;
 
     public HeatedArea() {}
 }

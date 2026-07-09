@@ -4,10 +4,10 @@ import game8.logic.*;
 import arc.struct.*;
 
 public class PLInstruction {
-    public Byte OpCode;
-    public PLObject ParamA;
-    public PLObject ParamB;
-    public PLObject ParamC;
+    public Byte opCode;
+    public PLObject paramA;
+    public PLObject paramB;
+    public PLObject paramC;
 
     public PLInstruction() {}
 }

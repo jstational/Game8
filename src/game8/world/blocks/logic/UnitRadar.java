@@ -4,7 +4,7 @@ import mindustry.world.Block;
 import mindustry.gen.Building;
 
 public class UnitRadar extends Block {
-    public float Range = 20f;
+    public float range = 20f;
 
     public UnitRadar(String name) {
         super(name);

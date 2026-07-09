@@ -6,22 +6,26 @@ import arc.graphics.g2d.*;
 import mindustry.entities.*;
 import arc.graphics.*;
 import arc.audio.*;
+import game8.type.weather.live.VESource;
 
 public class VolcanicEruption extends Weather {
     public TextureRegion RockTexture = new TextureRegion();
-    public Effect LavaPop = new Effect();
-    public Effect InitialEffect = new Effect();
-    public Color LavaInitialColor = new Color();
-    public Color LavaFinalColor = new Color();
-    public Color LavaMedColor = new Color();
-    public float LavaLifetime = 0f;
-    public Sound LavaPopSound = new Sound();
-    public Sound IntialSound = new Sound();
-    public Sound BurnSound = new Sound();
+    public Effect lavaPop = new Effect();
+    public Effect initialEffect = new Effect();
+    public Effect sourceEffect = new Effect();
+    public Color lavaInitialColor = new Color();
+    public Color lavaFinalColor = new Color();
+    public Color lavaMedColor = new Color();
+    public float lavaLifetime = 0f;
+    public Sound lavaPopSound = new Sound();
+    public Sound intialSound = new Sound();
+    public Sound burnSound = new Sound();
 
     public VolcanicEruption(String name) {
         super(name);
     }
 
-    public void Invoke(int x, int y) {}
+    public void invoke(int x, int y, int level) {
+        VESource.invoke(x, y, level)
+    }
 }

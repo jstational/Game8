@@ -6,12 +6,12 @@ import arc.struct.Seq;
 import game8.world.blocks.*;
 
 public class PressurePayloadCannon extends PayloadCannon {
-    public PressureBlock PressureBlock = new PressureBlock();
+    public PressureBlock pressureBlock = new PressureBlock();
 
     public PressurePayloadCannon(String name) {
         super(name);
     }
     public class PressurePayloadCannonBuild extends PayloadCannonBuild {
-        public PressureBuild PressureBuild = new PressureBuild();
+        public PressureBuild pressureBuild = new PressureBuild();
     }
 }

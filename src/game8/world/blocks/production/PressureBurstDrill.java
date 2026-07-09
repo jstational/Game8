@@ -5,12 +5,12 @@ import mindustry.world.Block;
 import game8.world.blocks.*;
 
 public class PressureBurstDrill extends Block {
-    public PressureBlock PressureBlock = new PressureBlock();
+    public PressureBlock pressureBlock = new PressureBlock();
 
     public PressureBurstDrill(String name) {
         super(name);
     }
     public class PressureBurstDrillBuild extends Building {
-        public PressureBuild PressureBuild = new PressureBuild();
+        public PressureBuild pressureBuild = new PressureBuild();
     }
 }

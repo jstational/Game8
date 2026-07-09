@@ -4,7 +4,7 @@ import mindustry.type.*;
 import game8.type.*;
 
 public class ItemOut extends Out {
-    public ItemStack Item;
+    public ItemStack item;
 
     public ItemOut() {}
 }

@@ -4,7 +4,7 @@ import mindustry.gen.Building;
 import mindustry.world.Block;
 
 public class FuelStation extends Block {
-    public float Range = 0f;
+    public float range = 0f;
 
     public FuelStation(String name) {
         super(name);

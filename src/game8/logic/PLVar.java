@@ -1,18 +1,18 @@
 package game8.logic;
 
 public class PLVar {
-    public String Label = "";
-    public float Value = 0f;
+    public String label = "";
+    public float value = 0f;
 
     public PLVar(String name) {
-        this.Label = name;
+        this.label = name;
     }
 
     public boolean Set(String name, Float value) {
-        if(value == this.Value) {
+        if(value == this.value) {
             return false;
         } else {
-            this.Value = value;
+            this.value = value;
             return true;
         }
     }

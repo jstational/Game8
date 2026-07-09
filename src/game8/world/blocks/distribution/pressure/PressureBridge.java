@@ -5,12 +5,12 @@ import mindustry.gen.Building;
 import game8.world.blocks.*;
 
 public class PressureBridge extends Block {
-    public PressureBlock PressureBlock = new PressureBlock();
+    public PressureBlock pressureBlock = new PressureBlock();
 
     public PressureBridge(String name) {
         super(name);
     }
     public class PressureBridgeBuild extends Building {
-        public PressureBuild PressureBuild = new PressureBuild();
+        public PressureBuild pressureBuild = new PressureBuild();
     }
 }
