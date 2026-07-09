@@ -5,5 +5,5 @@ public class Source {
     public float time;
 
     /** Create new instance of this source with parameters: */
-    public void Invoke(float x, float y, float time) {}
+    public void invoke(float x, float y, float time) {}
 }

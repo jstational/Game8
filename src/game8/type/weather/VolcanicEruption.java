@@ -25,7 +25,7 @@ public class VolcanicEruption extends Weather {
         super(name);
     }
 
-    public void invoke(int x, int y, int level) {
-        VESource.invoke(x, y, level)
+    public void invoke(float x, float y, int level) {
+        VESource.invoke(x, y, level);
     }
 }
