@@ -1,5 +1,7 @@
 package game8.type.weather;
 
+import mindustry.ctype.*;
+import game8.type.weather.*;
 import game.type.*;
 import arc.math.geom.*;
 import arc.graphics.g2d.*;
@@ -8,7 +10,7 @@ import arc.graphics.*;
 import arc.audio.*;
 import game8.type.weather.live.VESource;
 
-public class VolcanicEruptionWeather extends DynamicWeather {
+public class VolcanicEruptionEvent extends Event {
     public TextureRegion RockTexture = new TextureRegion();
     public Effect lavaPop = new Effect();
     public Effect initialEffect = new Effect();
@@ -21,10 +23,5 @@ public class VolcanicEruptionWeather extends DynamicWeather {
     public Sound intialSound = new Sound();
     public Sound burnSound = new Sound();
 
-    public VolcanicEruptionWeather(String name) {
-        super(name);
-    }
-
-    @Override
-    public void invoke(float x, float y, float time, int level) {}
+    public VolcanicEruptionEvent() {}
 }
