@@ -9,10 +9,5 @@ public class ManualMultiCrafter extends MultiProducer {
     public ManualMultiCrafter(String name) {
         super(name);
     }
-    public class ManualMultiCrafterBuild extends MultiProducerBuild {
-        @Override
-        public void Invoke() {
-            super.Invoke();
-        }
-    }
+    public class ManualMultiCrafterBuild extends MultiProducerBuild {}
 }

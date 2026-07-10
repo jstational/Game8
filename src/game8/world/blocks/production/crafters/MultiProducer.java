@@ -9,7 +9,5 @@ public class MultiProducer extends Block {
     public MultiProducer(String name) {
         super(name);
     }
-    public class MultiProducerBuild extends Building {
-        public void Invoke() {}
-    }
+    public class MultiProducerBuild extends Building {}
 }
