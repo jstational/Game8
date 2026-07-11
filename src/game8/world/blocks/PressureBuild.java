@@ -4,8 +4,6 @@ import arc.struct.Seq;
 import mindustry.gen.Building;
 
 public class PressureBuild {
-    public boolean producingMax = false;
-    public boolean syncedToSystem = false;
     public Seq<Building> pressureSystem = new Seq<Building>();
 
     public PressureBuild() {}
