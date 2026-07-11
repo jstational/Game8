@@ -13,7 +13,6 @@ public class PressureBridge extends Block {
     }
     public class PressureBridgeBuild extends Building {
         public PressureBuild pressureBuild = new PressureBuild();
-        /** find way to add Building value */
-        public Building link = new Building();
+        public Building link;
     }
 }
