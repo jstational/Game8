@@ -6,7 +6,7 @@ public class Event extends Content {
     public Event() {}
 
     @Override
-    public abstract ContentType getContentType() {
+    public ContentType getContentType() {
         return ContentType.weather;
     }
 }

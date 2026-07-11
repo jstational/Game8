@@ -4,6 +4,7 @@ import mindustry.type.*;
 import mindustry.world.meta.*;
 import game8.entities.units.*;
 import arc.struct.Seq;
+import mindustry.gen.Unit;
 
 public class AltitudeFuelUnitType extends UnitType {
     public Seq<FuelTank> fuelTanks;
