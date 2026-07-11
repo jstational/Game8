@@ -4,6 +4,7 @@ import mindustry.world.Block;
 import mindustry.gen.Building;
 import game8.world.blocks.*;
 
+/** on obtain system, PressureBridge check link */
 public class PressureBridge extends Block {
     public PressureBlock pressureBlock = new PressureBlock();
 
@@ -12,5 +13,7 @@ public class PressureBridge extends Block {
     }
     public class PressureBridgeBuild extends Building {
         public PressureBuild pressureBuild = new PressureBuild();
+        /** find way to add Building value */
+        public Building link = new Building();
     }
 }

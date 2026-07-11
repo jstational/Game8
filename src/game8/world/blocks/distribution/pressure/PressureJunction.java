@@ -4,6 +4,7 @@ import mindustry.world.Block;
 import mindustry.gen.Building;
 import game8.world.blocks.*;
 
+/** on obtain system, PressureJunction check in direction */
 public class PressureJunction extends Block {
     public PressureBlock pressureBlock = new PressureBlock();
 
