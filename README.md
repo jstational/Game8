@@ -33,9 +33,9 @@ this adds a new planet, cool right?
 
 ---
 
-## overly underestimating moddding
+## overly underestimating modding
 
-- i aim for the $$\color{#777777}{\text{farlands}}$$ vibe
+- a bunch of cool stuff
 
 ---
-version ****???****
+version ****??****
