@@ -5,7 +5,7 @@ import mindustry.gen.Building;
 import game8.entities.*;
 
 public class AreaFracker extends Block {
-    public AreaFracker(name) {
+    public AreaFracker(String name) {
         super(name);
     }
 
