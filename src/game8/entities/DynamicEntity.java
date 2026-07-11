@@ -9,4 +9,6 @@ public abstract class DynamicEntity {
     public float yvel;
 
     public DynamicEntity() {}
+
+    public void update() {}
 }

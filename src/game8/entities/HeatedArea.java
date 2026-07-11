@@ -6,4 +6,9 @@ public class HeatedArea extends AreaEntity {
     public int heat;
 
     public HeatedArea() {}
+    
+    @Override
+    public void update() {
+        super.update();
+    }
 }

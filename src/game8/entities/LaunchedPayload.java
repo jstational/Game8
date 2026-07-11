@@ -7,4 +7,9 @@ public class LaunchedPayload extends DynamicEntity {
     public PayloadStack type;
 
     public LaunchedPayload() {}
+
+    @Override
+    public void update() {
+        super.update();
+    }
 }

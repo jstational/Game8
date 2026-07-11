@@ -8,4 +8,9 @@ public class FrackedArea extends AreaEntity {
     public int frackLevel;
 
     public FrackedArea() {}
+
+    @Override
+    public void update() {
+        super.update();
+    }
 }

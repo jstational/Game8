@@ -6,4 +6,6 @@ public abstract class AreaEntity {
     public float areaSize;
 
     public AreaEntity() {}
+
+    public void update() {}
 }

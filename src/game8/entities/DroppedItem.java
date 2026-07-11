@@ -7,4 +7,9 @@ public class DroppedItem extends DynamicEntity {
     public ItemStack items;
 
     public DroppedItem() {}
+
+    @Override
+    public void update() {
+        super.update();
+    }
 }
