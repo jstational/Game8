@@ -10,5 +10,11 @@ public class BulletMine extends Block {
     public BulletMine(String name) {
         super(name);
     }
-    public class BulletMineBuild extends Building {}
+
+    public class BulletMineBuild extends Building {
+        public void explode() {}
+
+        @Override
+        public void updateTile() {}
+    }
 }
