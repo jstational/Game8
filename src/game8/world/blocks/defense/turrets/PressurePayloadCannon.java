@@ -7,6 +7,7 @@ import game8.world.blocks.*;
 
 public class PressurePayloadCannon extends PayloadCannon {
     public PressureBlock pressureBlock = new PressureBlock();
+    public float shootAt = 0f;
 
     public PressurePayloadCannon(String name) {
         super(name);
