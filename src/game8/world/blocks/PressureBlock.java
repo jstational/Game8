@@ -6,6 +6,8 @@ public class PressureBlock {
     public float minPressure;
     public float volume;
 
+    public boolean hasMMPressure;
+
     public PressureBlock() {}
 
     public PressureBlock(float min, float max, float vol) {

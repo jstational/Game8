@@ -5,10 +5,12 @@ import arc.struct.*;
 
 // pressurelogic executor
 public class PLExecutor {
-    public ObjectMap<String, PLVar> vars = new ObjectMap<>();
-    public IntMap<PLInstruction> instructs = new IntMap<>();
+    public ObjectMap<String, PLVar> vars;
+    public IntMap<PLInstruction> instructs;
 
     public int accumulator = 0;
 
     public void tick() {}
+
+    public PLExecutor() {}
 }

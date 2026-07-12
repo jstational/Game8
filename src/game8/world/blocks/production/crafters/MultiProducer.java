@@ -6,6 +6,8 @@ import game8.world.blocks.*;
 import mindustry.type.*;
 
 public class MultiProducer extends Block {
+    public PressureGeneratorBlock pressureGeneratorBlock = new PressureGeneratorBlock(0f, 0f);
+
     public MultiProducer(String name) {
         super(name);
     }
