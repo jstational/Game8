@@ -1,0 +1,15 @@
+name: "g8",
+displayName: "Game8",
+author: "jstation",
+description:
+'''
+This is a Mindustry mod.
+
+[gray]try steamworks, carpe diem, or asthosus too!
+''',
+version: "0",
+minGameVersion: 159.2,
+dependencies: [ ],
+hidden: false,
+main: "game8.Game8",
+java: true

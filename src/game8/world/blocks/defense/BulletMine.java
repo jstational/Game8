@@ -15,6 +15,8 @@ public class BulletMine extends Block {
         public void explode() {}
 
         @Override
-        public void updateTile() {}
+        public void updateTile() {
+            super.updateTile();
+        }
     }
 }

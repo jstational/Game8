@@ -87,7 +87,7 @@ jar{
     }
 
     from(projectDir){
-        include "mod.json"
+        include "mod.hjson"
     }
 }
 

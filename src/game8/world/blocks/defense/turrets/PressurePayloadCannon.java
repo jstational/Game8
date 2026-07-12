@@ -14,5 +14,10 @@ public class PressurePayloadCannon extends PayloadCannon {
     }
     public class PressurePayloadCannonBuild extends PayloadCannonBuild {
         public PressureBuild pressureBuild = new PressureBuild();
+
+        @Override
+        public void shoot(float x, float y, Payload payload) {
+            super.shoot(x, y, payload);
+        }
     }
 }
