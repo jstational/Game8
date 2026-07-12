@@ -12,23 +12,10 @@ public class PressureLogicBlock extends Block {
     public PressureLogicBlock(String name) {
         super(name);
     }
-    
-    // you should be able to obtain these from an link:
-    /** Pressure, Health, Ammo, Items, Liquids, ItemsCount, LiquidsCount, amt of a certain item, amt of a certain liquid */
-    public static class PressureLogicLink {
-        public int x, y;
-        public String name;
-        public Building build;
-
-        public PressureLogicLink(int x, int y, String name) {
-            this.x = x;
-            this.y = y;
-            this.name = name;
-        }
-    }
 
     public class PressureLogicBuild extends Building {
-        public PLInstruction[] code;
+        public Seq<PLInstruction> code;
         public PLExecutor executor;
+        public Building[] links;
     }
 }

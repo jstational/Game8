@@ -1,7 +1,6 @@
 package game8.logic;
 
 public class PLVar {
-    public String label = "";
     public float value = 0f;
 
     public PLVar(String name) {

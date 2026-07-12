@@ -6,13 +6,13 @@ import game8.world.blocks.*;
 
 /** on obtain system, PressureBridge check link */
 public class PressureBridge extends Block {
-    public PressureBlock pressureBlock = new PressureBlock();
+    public PressureBlock PressureBlock = new PressureBlock();
 
     public PressureBridge(String name) {
         super(name);
     }
     public class PressureBridgeBuild extends Building {
-        public PressureBuild pressureBuild = new PressureBuild();
+        public PressureBuild PressureBuild = new PressureBuild();
         public Building link;
     }
 }

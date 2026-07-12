@@ -6,12 +6,12 @@ import game8.world.blocks.*;
 
 /** on obtain system, PressureJunction check in direction */
 public class PressureJunction extends Block {
-    public PressureBlock pressureBlock = new PressureBlock();
+    public PressureBlock PressureBlock = new PressureBlock();
 
     public PressureJunction(String name) {
         super(name);
     }
     public class PressureJunctionBuild extends Building {
-        public PressureBuild pressureBuild = new PressureBuild();
+        public PressureBuild PressureBuild = new PressureBuild();
     }
 }
