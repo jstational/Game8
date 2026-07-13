@@ -1,6 +1,6 @@
 package game8.world.blocks.logic;
 
-import mindustry.world.Block;
+import game8.world.*;
 import mindustry.gen.Building;
 
 /** detects units */

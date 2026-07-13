@@ -1,12 +1,13 @@
 package game8.world.blocks.distribution.items;
 
-import mindustry.world.Block;
+import game8.world.*;
 import mindustry.gen.Building;
 
 /** welds payloads on the ground */
-public class PayloadWelder extends Block {
+public class PayloadWelder extends BaseBlock {
     public PayloadWelder(String name) {
         super(name);
     }
-    public class PayloadWelderBuild extends Building {}
+    
+    public class PayloadWelderBuild extends BaseBuild {}
 }

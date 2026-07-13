@@ -7,5 +7,6 @@ public class MultiCrafter extends MultiProducer {
     public MultiCrafter(String name) {
         super(name);
     }
-   public class MultiCrafterBuild extends MultiProducerBuild {}
+
+    public class MultiCrafterBuild extends MultiProducerBuild {}
 }

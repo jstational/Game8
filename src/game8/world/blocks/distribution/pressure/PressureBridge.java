@@ -1,18 +1,15 @@
 package game8.world.blocks.distribution.items;
 
-import mindustry.world.Block;
+import game8.world.*;
 import mindustry.gen.Building;
-import game8.world.blocks.*;
 
 /** on obtain system, PressureBridge check link */
 public class PressureBridge extends Block {
-    public PressureBlock PressureBlock = new PressureBlock();
-
     public PressureBridge(String name) {
         super(name);
     }
+
     public class PressureBridgeBuild extends Building {
-        public PressureBuild PressureBuild = new PressureBuild();
         public Building link;
     }
 }

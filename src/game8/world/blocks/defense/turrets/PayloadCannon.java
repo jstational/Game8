@@ -1,14 +1,15 @@
 package game8.world.blocks.defense.turrets;
 
-import mindustry.world.Block;
+import game8.world.*;
 import mindustry.gen.*;
 import mindustry.world.blocks.payloads.Payload;
 
-public class PayloadCannon extends Block {
+public class PayloadCannon extends BaseBlock {
     public PayloadCannon(String name) {
         super(name);
     }
-    public class PayloadCannonBuild extends Building {
+
+    public class PayloadCannonBuild extends BaseBuild {
         public void shoot(float x, float y, Payload payload) {}
     }
 }

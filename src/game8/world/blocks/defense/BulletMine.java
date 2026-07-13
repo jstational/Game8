@@ -1,17 +1,17 @@
 package game8.world.blocks.distribution.items;
 
-import mindustry.world.Block;
+import game8.world.*;
 import mindustry.gen.Building;
 import mindustry.entities.bullet.*;
 
-public class BulletMine extends Block {
+public class BulletMine extends BaseBlock {
     public BulletType bullet;
 
     public BulletMine(String name) {
         super(name);
     }
 
-    public class BulletMineBuild extends Building {
+    public class BulletMineBuild extends BaseBuild {
         public void explode() {}
 
         @Override

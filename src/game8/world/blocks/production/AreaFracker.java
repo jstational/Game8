@@ -1,15 +1,14 @@
 package game8.world.blocks.production;
 
-import mindustry.world.*;
+import game8.world.*;
 import mindustry.gen.Building;
-import game8.entities.*;
 
-public class AreaFracker extends Block {
+public class AreaFracker extends BaseBlock {
     public AreaFracker(String name) {
         super(name);
     }
 
-    public class AreaFrackerBuild extends Building {
+    public class AreaFrackerBuild extends BaseBuild {
         public FrackedArea frackedArea;
     }
 }
