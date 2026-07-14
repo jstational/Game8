@@ -89,6 +89,10 @@ jar{
 */
 
     from(projectDir){
+        include "scripts/**"
+    }
+
+    from(projectDir){
         include "mod.hjson"
     }
 }
