@@ -11,7 +11,7 @@ public class BaseBlock extends Block {
 
     public BaseBlock(String name) {
         super(name);
-        buildType = BaseBuild::new
+        buildType = BaseBuild::new;
     }
 
     public class BaseBuild extends Building {
