@@ -27,39 +27,39 @@ public class BaseBlock extends Block {
         }
 
         public float getConsumePressure() {
-            return consumingMax ? this.block.maxConsumePressure : this.block.minConsumePressure;
+            return consumingMax ? block.maxConsumePressure : block.minConsumePressure;
         }
 
         public float getGenPressure() {
-           return genMax ? this.block.maxGenPressure : this.block.minGenPressure;
+           return genMax ? block.maxGenPressure : block.minGenPressure;
         }
 
         public float getMaxPressure() {
-            return this.block.maxPressure;
+            return block.maxPressure;
         }
 
         public float getMinPressure() {
-            return this.block.minPressure;
+            return block.minPressure;
         }
 
         public float getVolume() {
-            return this.block.volume;
+            return block.volume;
         }
 
         public boolean hasPressure() {
-            return this.block.hasPressure;
+            return block.hasPressure;
         }
 
         public boolean producePressure() {
-            return this.block.producePressure;
+            return block.producePressure;
         }
 
         public float getGenInterval() {
-            return this.block.genInterval;
+            return block.genInterval;
         }
 
         public float getConsumeInterval() {
-            return this.block.consumeInterval;
+            return block.consumeInterval;
         }
  
         public void setSystem() {}
