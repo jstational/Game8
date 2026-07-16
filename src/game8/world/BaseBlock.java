@@ -11,6 +11,7 @@ public class BaseBlock extends Block {
 
     public BaseBlock(String name) {
         super(name);
+        buildType = BaseBuild::new
     }
 
     public class BaseBuild extends Building {
@@ -67,10 +68,5 @@ public class BaseBlock extends Block {
         public void setSystem() {}
 
         public void redefSystem() {}
-
-        @Override
-        public Building newBuilding() {
-            return new BaseBuild();
-        }
     }
 }
