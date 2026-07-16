@@ -14,6 +14,8 @@ public class BaseBlock extends Block {
     }
 
     public class BaseBuild extends Building {
+        /** oh my what the but ty PowerGenerator */
+        public BaseBlock block;
         public boolean consumingMax, genMax, syncedToSystem;
         public Seq<Building> pressureSystem;
 
@@ -65,5 +67,10 @@ public class BaseBlock extends Block {
         public void setSystem() {}
 
         public void redefSystem() {}
+
+        @Override
+        public Building newBuilding() {
+            return new BaseBuild();
+        }
     }
 }
