@@ -39,4 +39,11 @@ this adds a new planet, cool right?
 - HJSON/JSON-able, and patchable
 
 ---
+
+## how am i gonna organize how i make it
+
+1. new classes and stuff
+2. theres the content
+
+---
 version ****??****
