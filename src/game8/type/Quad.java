@@ -71,19 +71,19 @@ public class Quad<T> {
             if(!this.slotUsed(index)) return false;
             if(index = 1) {
                 this.object1 = null;
-                return true
+                return true;
             }
             if(index = 2) {
                 this.object2 = null;
-                return true
+                return true;
             }
             if(index = 3) {
                 this.object3 = null;
-                return true
+                return true;
             }
             if(index = 4) {
                 this.object4 = null;
-                return true
+                return true;
             }
         }
         return false;
@@ -93,19 +93,19 @@ public class Quad<T> {
         if(index > 0 && index <= 4) {
             if(index = 1) {
                 this.object1 = object;
-                return true
+                return true;
             }
             if(index = 2) {
                 this.object2 = object;
-                return true
+                return true;
             }
             if(index = 3) {
                 this.object3 = object;
-                return true
+                return true;
             }
             if(index = 4) {
                 this.object4 = object;
-                return true
+                return true;
             }
         }
         return false;

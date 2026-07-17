@@ -79,7 +79,7 @@ public class Tristate implements Comparable<Tristate> {
     }
 
     public boolean equals(Object other) {
-        if(!other instanceof Tristate) { throw new IllegalArgumentException("Tristate: Cannot compare another class to a Tristate!") }
+        if(!other instanceof Tristate) { throw new IllegalArgumentException("Tristate: Cannot compare another class to a Tristate!"); }
         return this.compareTo(other);
     }
 

@@ -8,5 +8,5 @@ public class HeatedAreaCompanion {
 
     public HeatedAreaCompanion() {}
 
-    public boolean canMelt
+    public boolean canMelt(Tile tile) { return false; }
 }

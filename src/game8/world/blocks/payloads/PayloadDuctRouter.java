@@ -2,6 +2,7 @@ package game8.world.blocks.payloads;
 
 import game8.world.*;
 import mindustry.gen.Building;
+import game8.type.Quad;
 
 public class PayloadDuctRouter extends BaseBlock {
     public PayloadDuctRouter(String name) {
@@ -9,6 +10,6 @@ public class PayloadDuctRouter extends BaseBlock {
     }
 
     public class PayloadDuctRouterBuild extends BaseBuild {
-        public 
+        public Quad<Building> out;
     }
 }
