@@ -8,5 +8,7 @@ public class PayloadDuctRouter extends BaseBlock {
         super(name);
     }
 
-    public class PayloadDuctRouterBuild extends BaseBuild {}
+    public class PayloadDuctRouterBuild extends BaseBuild {
+        public 
+    }
 }

@@ -5,6 +5,8 @@ import mindustry.gen.*;
 import mindustry.world.blocks.payloads.Payload;
 
 public class PayloadCannon extends BaseBlock {
+    public TurretSegment turret = new TurretSegment();
+
     public PayloadCannon(String name) {
         super(name);
     }

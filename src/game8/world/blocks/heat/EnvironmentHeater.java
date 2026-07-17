@@ -7,7 +7,7 @@ import mindustry.world.blocks.heat.*;
 
 /** Uses heat from the block behind it */
 public class EnvironmentHeater extends BaseBlock {
-    /** sourceBlock<Block>, intoBlock<Block>, level<int> */
+    public HeatedAreaCompanion heatStats = new HeatedAreaCompanion();
 
     public EnvironmentHeater(String name) {
         super(name);

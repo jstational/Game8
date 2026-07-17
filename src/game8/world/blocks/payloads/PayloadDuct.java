@@ -5,9 +5,13 @@ import mindustry.gen.Building;
 
 /** moves payloads forward */
 public class PayloadDuct extends BaseBlock {
+    public float moveSpeed = 0f;
+
     public PayloadDuct(String name) {
         super(name);
     }
 
-    public class PayloadDuctBuild extends BaseBuild {}
+    public class PayloadDuctBuild extends BaseBuild {
+        public Building out;
+    }
 }
