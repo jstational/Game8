@@ -5,6 +5,8 @@ import game8.entities.*;
 import mindustry.gen.Building;
 
 public class AreaFracker extends BaseBlock {
+    public float frackRate = 0f;
+
     public AreaFracker(String name) {
         super(name);
     }
