@@ -78,15 +78,13 @@ jar{
         configurations.runtimeClasspath.collect{ it.isDirectory() ? it : zipTree(it) }
     }
 
-/**
- *    from("assets/"){
- *        include "**"
- *    }
- *
- *    from(projectDir){
- *        include "content/**"
- *    }
-*/
+    from("assets/"){
+        include "**"
+    }
+
+    from(projectDir){
+        include "content/**"
+    }
 
     from(projectDir){
         include "scripts/**"
@@ -94,6 +92,14 @@ jar{
 
     from(projectDir){
         include "mod.hjson"
+    }
+
+    from(projectDir){
+        include "mod.hjson"
+    }
+
+    from(projectDir){
+        include "icon.png"
     }
 }
 
