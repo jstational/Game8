@@ -3,11 +3,11 @@ package game8.type;
 import java.lang.Math;
 
 /** Balanced or unbalanced tribool */
-public class Tristate implements Comparable<Tristate> {
-    private boolean valA;
-    private boolean valB;
+public class Tristate {
+    private final boolean valA;
+    private final boolean valB;
 
-    private boolean balanced;
+    private final boolean balanced;
 
     public Tristate(boolean a, boolean b) {
         this(a, b, false);
@@ -73,14 +73,8 @@ public class Tristate implements Comparable<Tristate> {
         return valA ? valB ? 1 : 0 : -1;
     }
 
-    @Override
-    public int compareTo(Tristate other) {
-        return (this.intVal() == other.intVal()) ? 1 : 0;
-    }
-
-    public boolean equals(Object other) {
-        if(!other instanceof Tristate) { throw new IllegalArgumentException("Tristate: Cannot compare another class to a Tristate!"); }
-        return this.compareTo(other);
+    public boolean equal(Tristate other) {
+        return this.intVal() == other.intVal();
     }
 
     public boolean trueEqual(Tristate other) {

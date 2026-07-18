@@ -3,6 +3,7 @@ package game8.world.blocks.defense.turrets;
 import game8.world.*;
 import mindustry.gen.*;
 import mindustry.world.blocks.payloads.Payload;
+import game8.type.*;
 
 public class PayloadCannon extends BaseBlock {
     public TurretSegment turret = new TurretSegment();
