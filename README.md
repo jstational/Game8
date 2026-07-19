@@ -35,8 +35,7 @@ this adds a new planet, cool right?
 
 ## overly underestimating modding
 
-- a bunch of cool stuff
-- HJSON/JSON-able, and patchable
+- custom everything
 
 ---
 
