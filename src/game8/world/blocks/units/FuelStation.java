@@ -9,5 +9,6 @@ public class FuelStation extends BaseBlock {
     public FuelStation(String name) {
         super(name);
     }
+    
     public class FuelStationBuild extends BaseBuild {}
 }

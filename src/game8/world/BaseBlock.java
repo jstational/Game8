@@ -34,7 +34,7 @@ public class BaseBlock extends Block {
         }
 
         public float getGenPressure() {
-           return genMax ? block.maxGenPressure : block.minGenPressure;
+            return genMax ? block.maxGenPressure : block.minGenPressure;
         }
 
         public float getMaxPressure() {
