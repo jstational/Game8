@@ -42,8 +42,8 @@ this adds a new planet, cool right?
 
 ## how am i gonna organize how i make it
 
-1. new classes and stuff
-2. theres the content
+step 1. new classes and stuff
+step 2. actually add the content and assets
 
 ---
 version ****??****
