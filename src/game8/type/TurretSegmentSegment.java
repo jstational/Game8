@@ -18,7 +18,7 @@ public class TurretSegmentSegment {
     public boolean flipSprite = false;
     /** shootorder goes forward */
     public int shootOrder = 0;
-    public DrawPart drawPart = new DrawPart();
+    public DrawPart drawPart;
 
     public TurretSegmentSegment() {}
 }

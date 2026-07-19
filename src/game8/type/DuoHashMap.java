@@ -1,10 +1,12 @@
 package game8.type;
 
+import java.util.HashMap;
+
 /** hashA and hashB can desync. */
 /** uses one key for two values */
 public class DuoHashMap<K, A, B> {
-    private final HashMap<K, A> hashA = new HashMap<>();
-    private final HashMap<K, B> hashB = new HashMap<>();
+    private final HashMap<K, A> hashA;
+    private final HashMap<K, B> hashB;
 
     public DuoHashMap() {}
 

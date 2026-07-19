@@ -1,7 +1,5 @@
 package game8.type;
 
-import java.lang.Math;
-
 /** Balanced or unbalanced tribool */
 public class Tristate {
     private final boolean valA;
@@ -14,22 +12,18 @@ public class Tristate {
     }
 
     public Tristate(int val) {
-        if(val > 2 || val < 0) { throw new IllegalArgumentException("Tristate: Int must not be less than 0 or greater than 2. " + Integer.toString(val)); }
         this(val > 0, val == 2, false);
     }
 
     public Tristate(int val, boolean balanced) {
-        if(val > 2 || val < 0) { throw new IllegalArgumentException("Tristate: Int must not be less than " + (balanced ? "-1" : "0") + " or greater than " + (balanced ? "1" : "2") + Integer.toString(val)); }
         this(val > (balanced ? -1 : 0), val == (balanced ? 1 : 2), balanced);
     }
 
     public Tristate(float val) {
-        if(val > 2f || val < 0f) { throw new IllegalArgumentException("Tristate: Float must not be less than 0f or greater than 2f. " + Float.toString(val)); }
         this(Math.floor(val) > 0f, Math.floor(val) == 2f, false);
     }
 
     public Tristate(float val, boolean balanced) {
-        if(val > 2f || val < 0f) { throw new IllegalArgumentException("Tristate: Float must not be less than " + (balanced ? "-1" : "0") + " or greater than " + (balanced ? "1" : "2") + Float.toString(val)); }
         this(Math.floor(val) > (balanced ? -1f : 0f), val == (balanced ? 1f : 2f), balanced);
     }
 
