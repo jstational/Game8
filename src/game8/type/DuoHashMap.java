@@ -104,4 +104,8 @@ public class DuoHashMap<K, A, B> {
     public int sizeB() {
         return hashB.size();
     }
+
+    public boolean containsKey(K key) {
+        return hashA.containsKey(key) || hashB.containsKey(key);
+    } 
 }

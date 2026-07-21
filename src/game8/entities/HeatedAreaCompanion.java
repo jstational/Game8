@@ -13,14 +13,14 @@ public class HeatedAreaCompanion {
         Block block = tile.build == null ? null : tile.build.block;
 
         if(block == null) return false;
-        if(!changeSet.contains(block)) return false;
+        if(!changeSet.containsKey(block)) return false;
         if(changeSet.getB(block) <= heat) return true;
     }
 
     public boolean canMeltFloor(Tile tile, float heat) {
         Block floor = tile.floor();
 
-        if(!changeSet.contains(floor)) return false;
+        if(!changeSet.containsKey(floor)) return false;
         if(changeSet.getB(floor) <= heat) return true;
     }
 }
