@@ -19,8 +19,8 @@ public class Quad<T> {
 
     public boolean slotUsed(int index) {
         if(index > 0 && index <= 4) {
-            if(this.usedSlots = 4) return true;
-            if(this.usedSlots = 0) return false;
+            if(this.usedSlots == 4) return true;
+            if(this.usedSlots == 0) return false;
             if(index == 1) return this.object1 == null;
             if(index == 2) return this.object2 == null;
             if(index == 3) return this.object3 == null;
