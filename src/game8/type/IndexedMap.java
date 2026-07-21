@@ -2,10 +2,11 @@ package game8.type;
 
 import java.util.HashMap;
 import arc.struct.Seq;
+import java.lang.Integer;
 
 public class IndexedMap<T> {
-    private HashMap<int, T> map;
-    private Seq<int> missingKeys;
+    private HashMap<Integer, T> map;
+    private Seq<Integer> missingKeys;
     private int nextKey = 0;
 
     public IndexedMap() {}

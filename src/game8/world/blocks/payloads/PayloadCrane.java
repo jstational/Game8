@@ -4,6 +4,7 @@ import game8.world.*;
 import mindustry.gen.Building;
 import game8.type.*;
 import arc.math.geom.*;
+import java.lang.Integer;
 
 /** brings blocks, units, or payloads on PayloadPad into another location */
 public class PayloadCrane extends BaseBlock {
@@ -14,6 +15,6 @@ public class PayloadCrane extends BaseBlock {
     public class PayloadCraneBuild extends BaseBuild {
         public PayloadCrane block;
         // checks these points if a building exists on them?
-        public DuoHashMap<Int, Point2, Point2> points = new DuoHashMap<>();
+        public DuoHashMap<Integer, Point2, Point2> points = new DuoHashMap<>();
     }
 }
