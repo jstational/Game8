@@ -11,6 +11,5 @@ public class IndexedMap<T> {
 
     public void put(T object) {
         map.put(object);
-        this.nextKey+;
     }
 }
