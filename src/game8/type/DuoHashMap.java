@@ -8,7 +8,10 @@ public class DuoHashMap<K, A, B> {
     private final HashMap<K, A> hashA;
     private final HashMap<K, B> hashB;
 
-    public DuoHashMap() {}
+    public DuoHashMap() {
+        this.hashA = new HashMap<>();
+        this.hashB = new HashMap<>();
+    }
 
     public static class Entry<A, B> {
         public final A a;
