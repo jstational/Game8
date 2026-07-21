@@ -39,6 +39,7 @@ public class Quad<T> {
         if(object3 == null) return 3;
         if(object2 == null) return 2;
         if(object1 == null) return 1;
+        return 0;
     }
 
     public int firstUnusedSlot() {
@@ -47,6 +48,7 @@ public class Quad<T> {
         if(object2 == null) return 2;
         if(object3 == null) return 3;
         if(object4 == null) return 4;
+        return 0;
     }
 
     public int lastUsedSlot() {
@@ -55,6 +57,7 @@ public class Quad<T> {
         if(object3 != null) return 3;
         if(object2 != null) return 2;
         if(object1 != null) return 1;
+        return 0;
     }
 
     public int firstUsedSlot() {
@@ -63,6 +66,7 @@ public class Quad<T> {
         if(object2 != null) return 2;
         if(object3 != null) return 3;
         if(object4 != null) return 4;
+        return 0;
     }
 
     public boolean remove(int index) {
