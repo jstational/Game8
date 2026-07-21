@@ -95,10 +95,6 @@ jar{
     }
 
     from(projectDir){
-        include "mod.hjson"
-    }
-
-    from(projectDir){
         include "icon.png"
     }
 }
