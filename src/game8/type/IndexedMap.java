@@ -7,11 +7,10 @@ public class IndexedMap<T> {
     private Seq<int> missingKeys;
     private int nextKey = 0;
 
-    public IndexedMap() {
-        return new IndexedMap<T>;
-    }
+    public IndexedMap() {}
 
     public void put(T object) {
         map.put(object);
+        this.nextKey+;
     }
 }

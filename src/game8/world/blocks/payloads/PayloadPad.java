@@ -2,6 +2,7 @@ package game8.world.blocks.distribution.items;
 
 import game8.world.*;
 import mindustry.gen.Building;
+import mindustry.world.blocks.payloads.*;
 
 /** an output for PayloadDucts */
 public class PayloadPad extends BaseBlock {
@@ -9,5 +10,7 @@ public class PayloadPad extends BaseBlock {
         super(name);
     }
 
-    public class PayloadPadBuild extends BaseBuild {}
+    public class PayloadPadBuild extends BaseBuild {
+        public Payload payload;
+    }
 }
