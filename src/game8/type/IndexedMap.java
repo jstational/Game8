@@ -12,6 +12,7 @@ public class IndexedMap<T> {
     public IndexedMap() {}
 
     public void put(T object) {
-        map.put(object);
+        // TODO make the nextKey and missingKeys system actually work
+        map.put(this.nextKey, object);
     }
 }

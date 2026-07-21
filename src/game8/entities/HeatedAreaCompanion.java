@@ -15,6 +15,7 @@ public class HeatedAreaCompanion {
         if(block == null) return false;
         if(!changeSet.containsKey(block)) return false;
         if(changeSet.getB(block) <= heat) return true;
+        return false;
     }
 
     public boolean canMeltFloor(Tile tile, float heat) {
@@ -22,5 +23,6 @@ public class HeatedAreaCompanion {
 
         if(!changeSet.containsKey(floor)) return false;
         if(changeSet.getB(floor) <= heat) return true;
+        return false;
     }
 }
