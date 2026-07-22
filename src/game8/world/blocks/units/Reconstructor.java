@@ -1,11 +1,11 @@
 package game8.world.blocks.units;
 
-import java.util.HashMap;
+import game8.type.*;;
 import game8.world.*;
 import mindustry.world.blocks.payloads.*;
 
 public class Reconstructor extends BaseBlock {
-    public HashMap<Payload, Payload> changeSet;
+    public DuoHashMap<Payload, Payload, ConsumeSeq> changeSet;
 
     public Reconstructor(String name) {
         super(name);

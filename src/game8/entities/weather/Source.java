@@ -6,5 +6,9 @@ import game8.type.weather.*;
 public class Source {
     public Event event;
 
+    public byte[] compress() {
+        return null;
+    }
+        
     public void update() {}
 }
