@@ -15,6 +15,7 @@ public class PayloadCrane extends BaseBlock {
     public class PayloadCraneBuild extends BaseBuild {
         public PayloadCrane block;
         // checks these points if a building exists on them?
+        // int: Order, Point1: Source position, Point2: To position
         public DuoHashMap<Integer, Point2, Point2> points = new DuoHashMap<>();
     }
 }

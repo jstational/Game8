@@ -16,7 +16,7 @@ public class Reconstructor extends BaseBlock {
 
         public Payload reconstruct(Payload payload) {
             if(block.changeSet.containsKey(payload)) {
-                return block.changeSet.get(payload);
+                return block.changeSet.get(payload).a;
             }
             return payload;
         }
