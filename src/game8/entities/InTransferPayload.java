@@ -1,4 +1,4 @@
-package game8.world.blocks.payloads;
+package game8.entities;
 
 import mindustry.gen.Building;
 import java.util.HashMap;

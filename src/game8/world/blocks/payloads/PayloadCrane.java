@@ -1,13 +1,19 @@
 package game8.world.blocks.distribution.items;
 
-import game8.world.*;
 import mindustry.gen.Building;
-import game8.type.*;
 import arc.math.geom.*;
+import arc.graphics.g2d.*;
+import game8.world.*;
+import game8.type.*;
 import java.lang.Integer;
 
 /** brings blocks, units, or payloads on PayloadPad into another location */
 public class PayloadCrane extends BaseBlock {
+    public TextureRegion extensionMidRegion;
+    public TextureRegion extensionRegion;
+    public TextureRegion clawRegion;
+    public TextureRegion extensionClawRegion;
+
     public PayloadCrane(String name) {
         super(name);
     }

@@ -9,5 +9,7 @@ public class TurretSegment {
 
     public TurretSegment() {}
 
-    public void draw();
+    public void draw() {}
+    
+    public void shoot() {}
 }
