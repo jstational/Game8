@@ -1,6 +1,6 @@
 package game8.world.blocks.units;
 
-import game8.type.*;;
+import game8.struct.*;
 import game8.world.*;
 import mindustry.world.blocks.payloads.*;
 

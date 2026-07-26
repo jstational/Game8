@@ -2,7 +2,7 @@ package game8.world.blocks.payloads;
 
 import game8.world.*;
 import mindustry.gen.Building;
-import game8.type.Quad;
+import game8.struct.Quad;
 import mindustry.world.blocks.payloads.*;
 
 public class PayloadDuctRouter extends BaseBlock {

@@ -1,6 +1,5 @@
 package game8.logic;
 
-import game8.logic.*;
 import arc.struct.*;
 
 public class PLInstruction {

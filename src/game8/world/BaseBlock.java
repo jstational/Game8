@@ -2,7 +2,10 @@ package game8.world;
 
 import mindustry.world.Block;
 import arc.struct.*;
+import arc.math.geom.*;
 import mindustry.gen.Building;
+import game8.struct.*;
+import java.lang.*;
 
 /** base block for game8 */
 public class BaseBlock extends Block {
@@ -23,18 +26,22 @@ public class BaseBlock extends Block {
             Building currentTarget;
             Seq<Building> processed;
             Seq<Building> willTrack;
-            IntSet processedPositions;
+            Seq<Point2> processedPositions;
 
             if(this.block.hasPressure) {
+                this.pressureSystem.clear();
                 return null;
             }
 
-            willTrack.putAll(this.adjacent);
-            processedPositions.put()
-            
+            currentTarget = this;
 
             while(!willTrack.isEmpty()) {
-                if
+                willTrack.add(currentTarget.adjacent);
+                for(willTrack : current) {
+                    if(current.block.hasPressure) {
+                        
+                    }
+                }
             }
 
             return processed;

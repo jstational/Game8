@@ -1,7 +1,7 @@
 package game8.entities;
 
 import mindustry.world.*;
-import game8.type.*;
+import game8.struct.*;
 
 public class HeatedAreaCompanion {
     /** this will be checked for every tick, i may or may not add many fields to this so i dont know what i should do */

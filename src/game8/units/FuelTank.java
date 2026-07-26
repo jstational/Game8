@@ -1,4 +1,4 @@
-package game8.type.units;
+package game8.units;
 
 import arc.math.geom.*;
 

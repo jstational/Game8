@@ -4,7 +4,7 @@ import mindustry.gen.Building;
 import arc.math.geom.*;
 import arc.graphics.g2d.*;
 import game8.world.*;
-import game8.type.*;
+import game8.struct.*;
 import java.lang.Integer;
 
 /** brings blocks, units, or payloads on PayloadPad into another location */
