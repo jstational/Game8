@@ -1,4 +1,4 @@
-package game8.type;
+package game8.struct;
 
 import mindustry.type.*;
 import arc.struct.Seq;

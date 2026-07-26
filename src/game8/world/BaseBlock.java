@@ -6,7 +6,7 @@ import mindustry.gen.Building;
 
 /** base block for game8 */
 public class BaseBlock extends Block {
-    public float minPressure, maxPressure, volume, minGenPressure, maxGenPressure, minConsumePressure, maxConsumePressure, genInterval, consumeInterval = 0f;
+    public float minPressure, maxPressure, volume, minGeneratePressure, maxGeneratePressure, minConsumePressure, maxConsumePressure, geneerateInterval, consumeInterval = 0f;
     public boolean hasPressure, producePressure, connectPressureSystems, consumePressure, startConsumeMin, startProduceMin = false;
 
     public BaseBlock(String name) {
@@ -15,18 +15,29 @@ public class BaseBlock extends Block {
     }
 
     public class BaseBuild extends Building {
-        /** oh my what the but ty PowerGenerator */
         public BaseBlock block;
-        public boolean consumingMax, genMax, syncedToSystem;
+        public boolean consumingMax, generatingMax, syncedToSystem;
         public Seq<Building> pressureSystem;
 
-        public Seq<Building> getSystem() {
-            Building curt;
+        public Seq<Building> updatePressureSystem() {
+            Building currentTarget;
             Seq<Building> processed;
-            Seq<Building> willt;
-            IntSet processedpos;
+            Seq<Building> willTrack;
+            IntSet processedPositions;
 
-            return null;
+            if(this.block.hasPressure) {
+                return null;
+            }
+
+            willTrack.putAll(this.adjacent);
+            processedPositions.put()
+            
+
+            while(!willTrack.isEmpty()) {
+                if
+            }
+
+            return processed;
         }
 
         public float getConsumePressure() {
@@ -34,9 +45,7 @@ public class BaseBlock extends Block {
         }
 
         public float getGenPressure() {
-            return genMax ? block.maxGenPressure : block.minGenPressure;
+            return generatingMax ? block.maxGeneratePressure : block.minGeneratePressure;
         }
-
-        public void redefSystem() {}
     }
 }
