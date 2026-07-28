@@ -1,7 +1,5 @@
 package game8.entities.weather;
 
-import game8.type.weather.*;
-
 /** Global weathers. No position */
 public class AbstractSource extends Source {
     public AbstractEvent event;
@@ -10,4 +8,7 @@ public class AbstractSource extends Source {
     public byte[] compress() {
         return null;
     }
+
+    @Override
+    public void update() {}
 }

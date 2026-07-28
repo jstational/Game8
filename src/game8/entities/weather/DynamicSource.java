@@ -1,14 +1,16 @@
 package game8.entities.weather;
 
-import game8.type.weather.*;
+import mindustry.gen.*;
 
 /** Positional weathers. Has position. */
-public class DynamicSource extends Source {
-    public float x, y;
+public class DynamicSource extends Source implements Posc {
     public DynamicEvent event;
 
     @Override
     public byte[] compress() {
         return null;
     }
+
+    @Override
+    public void update() {}
 }

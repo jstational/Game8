@@ -13,7 +13,7 @@ public class ClientState {
     private Building currentTarget;
 
     public void changeTarget() {
-        currentTarget = world.buildWorld(input.mouseWorldX(), input.mouseWorldY());
+        currentTarget = world.buildWorld(inadd.mouseWorldX(), inadd.mouseWorldY());
     }
 
     public void nullTarget() {

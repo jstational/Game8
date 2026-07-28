@@ -1,7 +1,5 @@
 package game8.entities.weather;
 
-import game8.type.weather.*;
-
 public class VolcanicEruptionSource extends DynamicSource {
     public VolcanicEruptionEvent event;
 
