@@ -1,0 +1,20 @@
+package game8.entities;
+
+import game8.entities.*;
+import mindustry.type.*;
+
+public class DroppedItem extends DynamicEntity {
+    public ItemStack items;
+
+    public DroppedItem() {}
+
+    @Override
+    public void update() {
+        super.update();
+    }
+
+    @Override
+    public void draw() {
+        
+    }
+}

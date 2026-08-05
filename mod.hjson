@@ -9,7 +9,7 @@ This is a Mindustry mod.
 ''',
 subtitle: "pneumatic-works"
 version: "0",
-minGameVersion: 159.5,
+minGameVersion: 159.1,
 dependencies: [ ],
 hidden: false,
 main: "game8.Game8",
