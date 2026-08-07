@@ -8,7 +8,7 @@ This is a Mindustry mod.
 [gray]try steamworks, carpe diem, or asthosus too!
 ''',
 subtitle: "pneumatic-works"
-version: "0",
+version: "0-IN",
 minGameVersion: 159.1,
 dependencies: [ ],
 hidden: false,
