@@ -8,12 +8,13 @@ public class PressureSource extends Block {
         super(name);
     }
     
-    public class PressureSourceBuild extends BaseBuild {
-        private float minGenPressure, maxGenPressure;
+    public class PressureSourceBuild extends Building {
+        private float minOutputPressure, maxOutputPressure;
+        private boolean outMax;
 
         @Override
         public float getGenPressure() {
-            return genMax ? this.maxGenPressure : this.minGenPressure;
+            return outMax ? this.maxOutputPressure : this.minOutputPressure;
         }
     }
 }

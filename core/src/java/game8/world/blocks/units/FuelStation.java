@@ -10,5 +10,5 @@ public class FuelStation extends Block {
         super(name);
     }
     
-    public class FuelStationBuild extends BaseBuild {}
+    public class FuelStationBuild extends Building {}
 }

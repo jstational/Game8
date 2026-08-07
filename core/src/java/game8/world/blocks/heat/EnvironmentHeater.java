@@ -13,7 +13,7 @@ public class EnvironmentHeater extends Block {
         super(name);
     }
     
-    public class EnvironmentHeaterBuild extends BaseBuild {
+    public class EnvironmentHeaterBuild extends Building {
         public HeatedArea heatedArea;
     }
 }

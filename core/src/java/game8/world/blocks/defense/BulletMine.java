@@ -4,7 +4,7 @@ import mindustry.world.*;
 import mindustry.gen.*;
 import mindustry.entities.bullet.*;
 import mindustry.content.*;
-import static java.lang.Math;
+import java.util.Math;
 
 public class BulletMine extends Block {
     public BulletType bullet = Bullets.placeholder;
@@ -15,12 +15,12 @@ public class BulletMine extends Block {
         super(name);
     }
 
-    public class BulletMineBuild extends BaseBuild {
+    public class BulletMineBuild extends Building {
         public BulletMine block;
 
         public Bullet explode() {
-            return bullet.create(this, this.team, this.x, this.y, random() * 360, block.bulletDamage, block.bulletVelocity);
             this.kill();
+            return block.bullet.create(this, this.team, this.x, this.y, Math.random() * 360, block.bulletDamage, block.bulletVelocity);
         }
 
         @Override

@@ -1,10 +1,10 @@
 package game8.entities.weather;
 
-import game8.type.weather.*;
+import game8.world.weather.*;
 import mindustry.gen.*;
 
 /** Base weather source. */
-public class Source implements Entityc, Syncc {
+public class Source /** implements Entityc, Syncc, Timedc */ {
     public Event event;
 
     public byte[] compress() {

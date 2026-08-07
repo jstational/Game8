@@ -12,7 +12,7 @@ public class UnitRadar extends Block {
         super(name);
     }
 
-    public class UnitRadarBuild extends BaseBuild {
+    public class UnitRadarBuild extends Building {
         public boolean detectsAllies = false;
 
         @Override

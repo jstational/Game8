@@ -11,7 +11,7 @@ public class AreaFracker extends Block {
         super(name);
     }
 
-    public class AreaFrackerBuild extends BaseBuild {
+    public class AreaFrackerBuild extends Building {
         public FrackedArea frackedArea;
     }
 }

@@ -1,4 +1,4 @@
-package game8.logic;
+package game8.world.blocks.logic.proc;
 
 public class PLVar {
     private float value = 0f;

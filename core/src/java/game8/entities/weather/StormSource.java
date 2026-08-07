@@ -1,8 +1,6 @@
 package game8.entities.weather;
 
-import mindustry.gen.*;
-
-public class StormSource extends AbstractSource implements Timedc {
+public class StormSource extends AbstractSource {
     public StormEvent event;
 
     @Override

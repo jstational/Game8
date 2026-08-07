@@ -1,4 +1,4 @@
-package game8.world.blocks.distribution.items;
+package game8.world.blocks.distribution.pressure;
 
 import mindustry.world.*;
 import mindustry.gen.Building;
@@ -9,7 +9,7 @@ public class PressureBridge extends Block implements PressureConnector {
         super(name);
     }
 
-    public class PressureBridgeBuild extends BaseBuild {
+    public class PressureBridgeBuild extends Building {
         public Building link;
     }
 }

@@ -1,4 +1,4 @@
-package game8.logic;
+package game8.world.blocks.logic.proc;
 
 import arc.struct.*;
 

@@ -6,4 +6,4 @@ const g8attributes = {
 };
 
 /* whatever you assign to module.exports is what gets returned when another class calls require() on your class */
-module.exports = g8Attributes;
+module.exports = G8Attributes;

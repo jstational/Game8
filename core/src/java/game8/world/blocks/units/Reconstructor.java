@@ -11,7 +11,7 @@ public class Reconstructor extends Block {
         super(name);
     }
 
-    public class ReconstructorBuild extends BaseBuild {
+    public class ReconstructorBuild extends Building {
         public Reconstructor block;
 
         public Payload reconstruct(Payload payload) {

@@ -15,7 +15,7 @@ public class TurretSegmentSegment {
     public float x, y, scale = 0f;
     public Seq<TurretSegmentSegment> turretSegments = new Seq<TurretSegmentSegment>();
     public Seq<Bullet> bullets;
-    public Seq<Effect> ejectEffecs, shootEffects = Fx.none;
+    public Seq<Effect> ejectEffects, shootEffects = Seq<>(Fx.none);
     /** im gonna try to make this ACTUALLY work. */
     public boolean flipSprite = false;
     public int layer = 0;

@@ -11,7 +11,7 @@ public class BaseRadarTurret extends Block {
         super(name);
     }
 
-    public class BaseRadarTurretBuild extends BaseBuild {
+    public class BaseRadarTurretBuild extends Building {
         public void shoot(float x, float y) {}
     }
 }

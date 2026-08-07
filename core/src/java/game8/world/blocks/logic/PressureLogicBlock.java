@@ -14,7 +14,7 @@ public class PressureLogicBlock extends Block {
         super(name);
     }
 
-    public class PressureLogicBuild extends BaseBuild {
+    public class PressureLogicBuild extends Building {
         public Seq<PLInstruction> code;
         public PLExecutor executor;
         public Building[] links;

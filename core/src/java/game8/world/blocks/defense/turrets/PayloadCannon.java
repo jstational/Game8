@@ -12,7 +12,7 @@ public class PayloadCannon extends Block {
         super(name);
     }
 
-    public class PayloadCannonBuild extends BaseBuild {
+    public class PayloadCannonBuild extends Building {
         public void shoot(float x, float y, Payload payload) {}
     }
 }
