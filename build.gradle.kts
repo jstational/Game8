@@ -109,7 +109,7 @@ val jarAndroid = tasks.register("jarAndroid") {
         //collect dependencies needed for desugaring
         val dependencies = (configurations.get().files + configurations.runtimeClasspath.get().files + File(platformRoot, "android.jar")).joinToString(" ") { "--classpath ${it.path}" }
 
-        val d8 = if isWindows "d8.bat" else "d8"
+        val d8 = if isWindows; "d8.bat" else "d8"
 
         //dex and desugar files - this requires d8 in your PATH
         val commands = "$d8 $dependencies --min-api 14 --output ${projectName}Android.jar ${projectName}Desktop.jar"
@@ -123,7 +123,7 @@ tasks.jar {
 
     from({
         configurations.runtimeClasspath.get().map {
-            if it.isDirectory() it else zipTree(it)
+            if it.isDirectory();c it else zipTree(it)
         }
     })
 
