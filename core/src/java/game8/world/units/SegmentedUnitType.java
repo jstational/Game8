@@ -10,7 +10,7 @@ public class SegmentedUnitType extends UnitType {
     /** segments connected to the unit itself */
     public Seq<Segment> rootSegments;
 
-    public UnitType(name) {
+    public SegmentedUnitType(String name) {
         super(name);
     }
 }

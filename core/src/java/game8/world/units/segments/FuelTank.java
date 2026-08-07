@@ -20,6 +20,6 @@ public class FuelTank implements Segment {
 
     /** FuelTank at the center of the unit */
     public FuelTank(float m) {
-        this(m, 0f, 0f)
+        this(m, 0f, 0f);
     }
 }
