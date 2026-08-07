@@ -112,7 +112,7 @@ java {
     sourceCompatibility = ver
 }
 
-val isWindows = System.getProperty("os.name").toLowerCase().contains("windows")
+val isWindows = System.getProperty("os.name").lowercase().contains("windows")
 val sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
 
 dependencies {
@@ -129,7 +129,7 @@ tasks.register("jarAndroid") {
         if(sdkRoot.isNullOrEmpty() || !File(sdkRoot).exists()) throw GradleException(noAndroidSDK)
 
         val platformRoot = File("$sdkRoot/platforms/").listFiles().sortedDescending().toList().find {
-                File(it, "android.jar")
+                File(it, "android.jar").exists()
             }
 
         if(platformRoot == null) throw GradleException(noAndroidJar)
@@ -177,10 +177,10 @@ tasks.register<Jar>("deploy") {
     archiveFileName.set("${projectName}.jar")
 
     from({
-        listOf([
+        listOf(
             zipTree("build/libs/${projectName}Desktop.jar"),
             zipTree("build/libs/${projectName}Android.jar")
-        ])
+        )
     })
 
     doLast {
