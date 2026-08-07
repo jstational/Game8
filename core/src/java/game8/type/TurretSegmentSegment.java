@@ -13,17 +13,30 @@ import java.lang.*;
 
 public class TurretSegmentSegment {
     public float x, y, scale = 0f;
-    public Seq<TurretSegmentSegment> turretSegments = new Seq<TurretSegmentSegment>();
+    public Seq<TurretSegmentSegment> turretSegments;
     public Seq<Bullet> bullets;
-    public Seq<Effect> ejectEffects, shootEffects = Seq<>(Fx.none);
+    public Seq<Effect> ejectEffects, shootEffects;
     /** im gonna try to make this ACTUALLY work. */
     public boolean flipSprite = false;
     public int layer = 0;
-    public Seq<Integer> shootOrders;
-    public Seq<DrawPart> parts = new Seq<>(DrawPart.class);
-    public Seq<Pair<TextureRegion, Vec2>> textures;
+    public IntSeq shootOrders;
+    public Seq<DrawPart> parts;
+    public TextureRegion texture;
 
-    public TurretSegmentSegment() {}
+    public TurretSegmentSegment(float x, float y, float scl, Seq<TurretSegmentSegment> ts, Seq<Bullet> blts, Seq<Effect> ejfx, Seq<Effect> sofx, boolean flip, int lr, IntSeq soor, Seq<DrawPart> dps, TextureRegion txt) {
+        this.x = x;
+        this.y = y;
+        this.scale = scl;
+        this.turretSegments = ts;
+        this.bullets = blts;
+        this.ejectEffects = ejfx;
+        this.shootEffects = sofx;
+        this.flipSprite = fs;
+        this.layer = lr;
+        this.shootOrders = soor;
+        this.parts = dps;
+        this.texture = txt;
+    }
 
     public void draw() {}
 }
