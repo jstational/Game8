@@ -1,3 +1,12 @@
+import org.gradle.jvm.tasks.Jar
+import java.nio.file.*
+import java.net.HttpURLConnection
+import java.net.URL
+import java.util.zip.ZipInputStream
+import java.io.*
+import java.util.zip.*
+import kotlin.random.Random
+
 val projectName = "game8"
 
 val req = "g8tf"
@@ -9,15 +18,6 @@ val owner = "jstational"
 // - be: depend on the very latest commit of mindustry
 // - v<number>: depend on a specific commit
 val mindustryVersion = "latest"
-
-import org.gradle.jvm.tasks.Jar
-import java.nio.file.*
-import java.net.HttpURLConnection
-import java.net.URL
-import java.util.zip.ZipInputStream
-import java.io.*
-import java.util.zip.*
-import kotlin.random.Random
 
 plugins {
     java
