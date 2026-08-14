@@ -16,7 +16,6 @@ public class TurretSegmentSegment {
     public Seq<TurretSegmentSegment> turretSegments;
     public Seq<Bullet> bullets;
     public Seq<Effect> ejectEffects, shootEffects;
-    /** im gonna try to make this ACTUALLY work. */
     public boolean flipSprite = false;
     public int layer = 0;
     public IntSeq shootOrders;
@@ -38,5 +37,5 @@ public class TurretSegmentSegment {
         this.texture = txt;
     }
 
-    public void draw() {}
+    public void draw(float x, float y, float rot) {}
 }

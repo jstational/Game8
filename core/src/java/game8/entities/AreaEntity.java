@@ -8,4 +8,8 @@ public class AreaEntity {
     public AreaEntity() {}
 
     public void update() {}
+
+    public void destroy() {}
+
+    public void draw() {}
 }

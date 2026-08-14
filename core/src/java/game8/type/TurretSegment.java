@@ -11,7 +11,7 @@ public class TurretSegment {
         this.turretSegments = tss;
     }
 
-    public void draw() {}
+    public void draw(float x, float y, float rot) {}
     
-    public void shoot() {}
+    public void shoot(float x, float y, float rot) {}
 }

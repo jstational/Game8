@@ -9,9 +9,9 @@ ferric stone
 #75503e :: dark
 
 primordial crystal
-:: light
-:: med
-:: dark
+#91868f :: light
+#655869 :: med
+#47424a :: dark
 
 crystal
 #82717f :: light
