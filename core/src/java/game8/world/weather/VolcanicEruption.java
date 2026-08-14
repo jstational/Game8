@@ -23,7 +23,7 @@ public class VolcanicEruption extends Weather {
     public Sound intialSound = new Sound();
     public Sound burnSound = new Sound();
 
-    public VolcanicEruptionEvent(String name) {
+    public VolcanicEruption(String name) {
         super(name);
     }
 

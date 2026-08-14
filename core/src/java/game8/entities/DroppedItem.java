@@ -26,7 +26,7 @@ public class DroppedItem extends DynamicEntity {
     public void collect(Unit u) {
         if(u.stack.amount + this.items.amount > u.itemCapacity()) {
             u.addItems(this.items.item, this.items.amount);
-            this.destroy() {}
+            this.destroy();
         }
     }
 
