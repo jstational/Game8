@@ -4,7 +4,6 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.util.zip.ZipInputStream
 import java.io.*
-import java.util.zip.*
 import kotlin.random.Random
 
 val projectName = "game8"
@@ -35,11 +34,11 @@ val toApply: HashMap<String, HashMap<String, HashMap<String, String>>> = hashMap
         ),
 
         "replaceString" to hashMapOf(
-            req to projectname
+            req to project.name
         ),
 
         "replaceDirectoryName" to hashMapOf (
-            req to projectname
+            req to project.name
         )
     )
 )
@@ -95,10 +94,10 @@ tasks.register("applying") {
             downloadTo.mkdirs()
             extractTo.mkdirs()
 
-            val zip = File(downloadDir, "$currentIdentifier.zip")
+            val zip = File(downloadTo, currentIdentifier + ".zip")
 
             downloadRepo(uri(fromURL + "/" + fromBranch).toURL(), zip)
-            extractZip(zipFile, extractTo)
+            extractZip(zip, extractTo)
 
             val getInZip = hash["get"] ?.get("fromDir") ?: error(noDir)
             val putToDir = hash["get"] ?.get("toDir") ?: error(noDir)
@@ -133,7 +132,7 @@ fun downloadRepo(url: URL, dir: File) {
     }
 }
 
-fun extractZip(from: ZipFile, to: File) {
+fun extractZip(from: File, to: File) {
     if(!from.exists()) {
         error("zip doesnt exist: " + from.name)
     }
