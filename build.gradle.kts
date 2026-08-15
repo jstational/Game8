@@ -37,10 +37,6 @@ val toApply: HashMap<String, HashMap<String, HashMap<String, String>>> = hashMap
         "replaceString" to hashMapOf(
             req to project.name
         ),
-
-        "replaceDirectoryName" to hashMapOf (
-            req to project.name
-        )
     )
 )
 
@@ -104,8 +100,15 @@ tasks.register("applying") {
             val putToDir = hash["get"] ?.get("toDir") ?: error(noDir)
 
             val obtain = File(extractTo, getInZip)
+            val putToFile = File(putToDir)
 
             obtain.copyRecursively(File(putToDir), overwrite = false)
+
+            val replace = hash["replaceString"]
+
+            for((k, v) in replace) {
+                replaceString(putToFile, k, v)
+            }
         }
     }
 }
@@ -130,6 +133,24 @@ fun downloadRepo(url: URL, dir: File) {
         }
     } finally {
         getter.disconnect()
+    }
+}
+
+fun replaceString(from: File, fromString: String, toString: String) {
+    if(!from.exists()) {
+        error("directory doesnt exist: " + from.name)
+    }
+
+    from.walk().filter {
+        it.isFile
+    }.forEach {
+        file ->
+        try {
+            if (originalContent.contains(oldString)) {
+                file.writeText(file.readText().replace(oldString, newString))
+                println("Updated: ${file.path}")
+            }
+        }
     }
 }
 
