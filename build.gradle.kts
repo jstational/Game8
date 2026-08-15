@@ -145,11 +145,8 @@ fun replaceString(from: File, fromString: String, toString: String) {
         it.isFile
     }.forEach {
         file ->
-        try {
-            if (originalContent.contains(oldString)) {
-                file.writeText(file.readText().replace(oldString, newString))
-                println("Updated: ${file.path}")
-            }
+        if (originalContent.contains(oldString)) {
+            file.writeText(file.readText().replace(oldString, newString))
         }
     }
 }
