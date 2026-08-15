@@ -145,8 +145,8 @@ fun replaceString(from: File, fromString: String, toString: String) {
         it.isFile
     }.forEach {
         file ->
-        if (originalContent.contains(oldString)) {
-            file.writeText(file.readText().replace(oldString, newString))
+        if (file.readText.contains(fromString)) {
+            file.writeText(file.readText().replace(fromString, toString))
         }
     }
 }
