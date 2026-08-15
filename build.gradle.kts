@@ -104,9 +104,8 @@ tasks.register("applying") {
 
             obtain.copyRecursively(File(putToDir), overwrite = false)
 
-            val replace = hash["replaceString"]
-
-            for((k, v) in replace) {
+            (hash["replaceString"] as ? Map<String, String>) ?.forEach { 
+                (k, v) ->
                 replaceString(putToFile, k, v)
             }
         }
